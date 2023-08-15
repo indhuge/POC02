@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo{
+    width: 100%;
+    margin-left: 20%;
+    img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.menu{
+    width: 100%;
+    a{
+        margin-left: 10%;
+        margin-right: 10%;
+        text-decoration: none;
+        color: black;
+    }
+    a :hover{
+        color: #F2B138;
+    }
+}
+
+.botao button{
+    background-color: #003F63;
+    color: white;
+    padding: 5%;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.botao :hover{
+    font-weight: bold;
+}
+
+.botao :active{
+    background-color: #F2B138;
+}
