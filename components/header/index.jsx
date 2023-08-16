@@ -15,9 +15,9 @@ const Header = () => {
             <Link href="">CASES</Link>
         </div>
         <div className={Styles.botao}>
-            <button><label>ENTRE EM CONTATO</label></button>
+            <Link href="/#formulario"><button><label>ENTRE EM CONTATO</label></button></Link>
         </div>
-    </div>;
+    </div>
 };
 
 export default Header;
