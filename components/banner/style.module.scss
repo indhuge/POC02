@@ -1,0 +1,69 @@
+.container{
+    width: 100%;
+}
+
+.triangulo img{
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: auto;
+}
+
+.texto h1{
+    position: absolute;
+    color: #003F63;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: 42%;
+
+    height: 80%;
+    width: 60%;
+}
+
+.engrenagens{
+    align-items: center;
+    height: 80%;
+}
+
+.engrenagens img{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+    width: 15%;
+    height: auto;
+}
+
+.seta img{
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    width: 50%;
+    height: 15%;
+    transform: scaleX(calc((100 - var(--scroll))/100));
+}
+
+.seta button{
+    position: absolute;
+    bottom: 4%;
+    left: 15%;
+    background-color: #003F63;
+    color: white;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 1%;
+    border-radius: 10px;
+    border-width: 0;
+    
+}
+
+.botao :hover{
+    font-weight: bold;
+}
+
+.botao :active{
+    background-color: #F2B138;
+}
+
+.container:root {
+    --scroll: 0;
+}
