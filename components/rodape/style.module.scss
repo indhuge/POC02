@@ -1,0 +1,53 @@
+.container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    background-color: #003F63;
+    top: 264%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.container label{
+    display: block;
+    color: white;
+    margin-left: 20%;
+    margin-top: 15px;
+    
+}
+
+.container a{
+    display: block;
+    color: white;
+    margin-left: 20%;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.container h1{
+    color: #F2B138;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.container h4{
+    color: #F2B138;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+#logo{
+    background-color: #DEDEDE;
+    margin-left: 10%;
+    margin-top: 45px;
+}
+
+.redessociais{
+    margin-left: 5%;
+    margin-top: 10px
+}
+
+.logo a{
+    display: inline;
+    margin-left: 10%;
+}
