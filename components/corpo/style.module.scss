@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 55%;
-
 }
 
 .container div h2{
@@ -47,6 +46,7 @@ align-items: center;
 .item4 button{
     display: flex;
     margin-top: 50px;
+    margin-bottom: 30px;
     align-self: center;
     background-color: #003F63;
     color: white;
