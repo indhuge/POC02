@@ -13,7 +13,7 @@ const Header = () => {
         <div className={Styles.texto}>
             <h1>TRANSFORMANDO A SUA INDÚSTRIA COM A NOSSA TECNOLOGIA</h1>
         </div>
-        <div className={Styles.engrenagens} id="formulario">
+        <div className={Styles.engrenagens}>
             <Image src={Engrenagens}/>
         </div>
         <div className={Styles.seta}>
