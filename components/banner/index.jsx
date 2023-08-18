@@ -7,18 +7,16 @@ import Seta from "../../public/assets/setabanner.png"
 
 const Header = () => {
     return <div className={Styles.container}>
-        <div className={Styles.triangulo}>
-            <Image src={Triangulo}/>
+        <div className={Styles.cima}>
+            <Image className={Styles.triangulo} src={Triangulo}/>
+        
+            <h1 className={Styles.texto}>TRANSFORMANDO A SUA INDÚSTRIA<br/>COM A NOSSA TECNOLOGIA</h1>
+        
+            <Image className={Styles.engrenagens} src={Engrenagens}/>
         </div>
-        <div className={Styles.texto}>
-            <h1>TRANSFORMANDO A SUA INDÚSTRIA COM A NOSSA TECNOLOGIA</h1>
-        </div>
-        <div className={Styles.engrenagens}>
-            <Image src={Engrenagens}/>
-        </div>
-        <div className={Styles.seta}>
+        <div className={Styles.baixo}>
             <div className={Styles.botao}><button><label>CONHEÇA O QUE OFERECEMOS</label></button></div>
-            <Image src={Seta}/>
+            <Image className={Styles.seta} src={Seta}/>
         </div>
     </div>;
 };

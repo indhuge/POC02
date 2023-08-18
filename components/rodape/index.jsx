@@ -30,7 +30,9 @@ const Rodape = () => {
             <Link href={""}>conteúdo exclusivo</Link>
         </div>
         <div className={Styles.logo}>
-            <Image src={Logo} id={Styles.logo}/>
+            <div id={Styles.logo}>
+                <Image src={Logo}/>
+            </div>
             <div className={Styles.redessociais}>
                 <Link href={""}><Image src={Logoinstagram}/></Link>
                 <Link href={""}><Image src={Logofacebook}/></Link>

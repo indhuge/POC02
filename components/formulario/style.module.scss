@@ -1,37 +1,39 @@
 .container{
-    position: absolute;
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
     width: 100%;
-    top: 205%;
     background-color: #F2B138;
+    z-index: 0;
+    font-size: 1.5vw;
 }
 
 .container h2{
-    margin-top: 50px;
+    margin-top: 2vw;
 }
 
 .container input{
-    width: 50%;
-    margin-top: 20px;
-    height: 30px;
-    border-radius: 20px;
+    width: 52%;
+    margin-top: 1vw;
+    height: 3vw;
+    border-radius: 1vw;
     background-color: #DEDEDE;
     border-color: #DEDEDE;
+    font-size: 1vw;
 }
 
 .msg{
-    padding-bottom: 200px !important;
+    padding-bottom: 1vw !important;
 }
 
 .container input:last-of-type{
-    margin-bottom: 20px;
-    height: 40px;
+    margin-bottom: 2vw;
     width: 30%;
-    margin: 20px 10%;
+    margin: 2vw 10%;
     background-color: #003F63;
     color: white;
+    font-size: 2vw;
+    border-radius: 10vw;
 }
 
 .container input:last-of-type:hover{

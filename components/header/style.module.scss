@@ -1,48 +1,58 @@
 .container{
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 100%;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     background-color: #DEDEDE;
-}
+    z-index: 10;
+    height: auto;
 
-.logo{
-    width: 100%;
-    margin-left: 20%;
-    img{
-        width: 50%;
-        height: auto;
+    .logo{
+        width: 100%;
+        margin-left: 20%;
+        img{
+            height: 4vw;
+            width: auto;
+        }
     }
-}
 
-.menu{
-    width: 100%;
-    a{
-        margin-left: 10%;
-        margin-right: 10%;
-        text-decoration: none;
-        color: black;
+    .menu{
+        font-size: 1.5vw;
+        a{
+            margin-left: 8%;
+            margin-right: 8%;
+            text-decoration: none;
+            color: black;
+        }
+        a :hover{
+            color: #F2B138;
+        }
     }
-    a :hover{
-        color: #F2B138;
+
+    .botao {
+        width: 100%;
+        a{
+            margin-left: 50%;
+            button{
+                font-size: 1vw;
+                background-color: #003F63;
+                color: white;
+                padding: 5%;
+                border-radius: 10vw;
+                border-width: 0;
+            }
+
+            :hover{
+                font-weight: bold;
+            }
+
+            :active{
+                background-color: #F2B138;
+            }
+        }
+
+
     }
-}
-
-.botao button{
-    background-color: #003F63;
-    color: white;
-    padding: 5%;
-    border-radius: 10px;
-    border-width: 0;
-}
-
-.botao :hover{
-    font-weight: bold;
-}
-
-.botao :active{
-    background-color: #F2B138;
 }

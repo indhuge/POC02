@@ -21,7 +21,9 @@ const Corpo = () => {
                 <div><Image src={Cliente}/></div>
                 <div><Image src={Cliente}/></div>
             </div>
-            <button id="botao">VER MAIS</button>
+            <div className={Styles.botao}>
+                <button id="botao"><label>VER MAIS</label></button>
+            </div>
         </div>
     </div>
 
