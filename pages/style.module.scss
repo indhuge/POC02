@@ -1,17 +1,15 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    z-index: 2;
+    z-index: -1;
 }
 
 .container *{
     position: relative;
+    z-index: 2;
 }
 
 .header{
     position: fixed !important;
-}
-
-.banner{
-    z-index: -5;
+    z-index: 2;
 }
