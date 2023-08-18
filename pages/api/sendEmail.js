@@ -13,8 +13,8 @@ export default async function handler(req, res) {
     try {
         const message = await client.sendAsync({
             text: "teste123",
-            from: 'testeapiemail2000@gmail.com',
-            to: 'testeapiemail2000@gmail.com',
+            from: 'tocohij607@bagonew.com',
+            to: 'tocohij607@bagonew.com',
             subject: 'testing emailjs',
         });
         console.log(message);

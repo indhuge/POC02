@@ -1,3 +1,4 @@
+import axios from "axios";
 import Styles from "./style.module.scss"
 
 const Formulario = () => {
