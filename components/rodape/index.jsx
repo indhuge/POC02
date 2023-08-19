@@ -34,10 +34,10 @@ const Rodape = () => {
                 <Image src={Logo}/>
             </div>
             <div className={Styles.redessociais}>
-                <Link href={""}><Image src={Logoinstagram}/></Link>
-                <Link href={""}><Image src={Logofacebook}/></Link>
-                <Link href={""}><Image src={Logolinkedin}/></Link>
-                <Link href={""}><Image src={Logoyoutube}/></Link>
+                <Link href={"https://www.instagram.com"}><Image src={Logoinstagram}/></Link>
+                <Link href={"https://www.facebook.com"}><Image src={Logofacebook}/></Link>
+                <Link href={"https://www.linkedin.com"}><Image src={Logolinkedin}/></Link>
+                <Link href={"https://www.youtube.com"}><Image src={Logoyoutube}/></Link>
             </div>
         </div>
     </div>

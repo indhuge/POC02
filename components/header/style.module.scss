@@ -1,5 +1,26 @@
+@media only screen and (max-width: 640px){
+    .container{
+        div{
+            margin: 0vw !important;
+            img{
+                margin: 0vw 10%  !important;
+            }
+        }
+        a{
+            font-size: 3.8vw !important;
+            margin: 0vw 1vw !important;
+            text-align: center !important;
+        }
+        button{
+            font-size: 3vw !important;
+            margin: 0vw 10%  !important;
+        }
+    }
+}
+
 .container{
     width: 100%;
+    padding: 1vw 0vw;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

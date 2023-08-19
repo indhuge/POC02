@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import Link from "next/link"
 import Styles from "./style.module.scss"
 import Image from "next/image"
 import Cliente from "../../public/assets/cliente.png"
@@ -22,7 +23,7 @@ const Corpo = () => {
                 <div><Image src={Cliente}/></div>
             </div>
             <div className={Styles.botao}>
-                <button id="botao"><label>VER MAIS</label></button>
+                <button id="botao"><Link href="./cases"><label>VER MAIS</label></Link></button>
             </div>
         </div>
     </div>

@@ -1,3 +1,36 @@
+@media only screen and (max-width: 640px){
+    .container{
+        grid-template-columns: 1fr !important;
+        height: fit-content !important;
+        text-align: center;
+        font-size: 3vw !important;
+        h1{
+            margin: 3vw 0vw!important;
+        }
+        h4{        
+            margin: 5vw 0vw 3vw 0vw!important;
+        }
+        a{
+            margin: 3vw 0vw!important;
+        }
+        label{
+            margin: 3vw 0vw!important;
+        }
+        .logo{
+            height: fit-content !important;
+            img{
+                margin: 3vw 0vw !important;
+            }
+            .redessociais{
+                margin: 0vw !important;
+                img{
+                    margin: 2vw 3vw !important;
+                }
+            }
+        }
+    }
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;

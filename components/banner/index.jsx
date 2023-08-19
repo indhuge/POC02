@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Styles from "./style.module.scss"
+import Link from "next/link"
 import Image from "next/image"
 import Triangulo from "../../public/assets/triangulobanner.png"
 import Engrenagens from "../../public/assets/engrenagensbanner.gif"
@@ -15,7 +16,7 @@ const Header = () => {
             <Image className={Styles.engrenagens} src={Engrenagens}/>
         </div>
         <div className={Styles.baixo}>
-            <div className={Styles.botao}><button><label>CONHEÇA O QUE OFERECEMOS</label></button></div>
+            <div className={Styles.botao}><button><Link href="./produtos"><label>CONHEÇA O QUE OFERECEMOS</label></Link></button></div>
             <Image className={Styles.seta} src={Seta}/>
         </div>
     </div>;
