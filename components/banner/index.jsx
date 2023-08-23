@@ -9,14 +9,14 @@ import Seta from "../../public/assets/setabanner.png"
 const Header = () => {
     return <div className={Styles.container}>
         <div className={Styles.cima}>
-            <Image className={Styles.triangulo} src={Triangulo}/>
+            <Image className={Styles.triangulo} src={Triangulo} id="home"/>
         
             <h1 className={Styles.texto}>TRANSFORMANDO A SUA INDÚSTRIA<br/>COM A NOSSA TECNOLOGIA</h1>
         
             <Image className={Styles.engrenagens} src={Engrenagens}/>
         </div>
         <div className={Styles.baixo}>
-            <div className={Styles.botao}><button><Link href="./produtos"><label>CONHEÇA O QUE OFERECEMOS</label></Link></button></div>
+            <div className={Styles.botao}><button><Link href="/#produtos"><label>CONHEÇA O QUE OFERECEMOS</label></Link></button></div>
             <Image className={Styles.seta} src={Seta}/>
         </div>
     </div>;

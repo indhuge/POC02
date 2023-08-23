@@ -24,8 +24,9 @@ export default async function handler(req, res) {
       res.status(200).json({ message: 'Email enviado com sucesso!' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: 'Ocorreu um erro ao enviar o email.' });
-    }
+      res.status(500).json({ message: 'Ocorreu um erro ao enviar o email.' })
+        }
+        
   } else {
     res.status(405).json({ message: 'Método não permitido' });
   }
