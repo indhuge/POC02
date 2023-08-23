@@ -7,14 +7,14 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: "indhugetesteformulario@gmail.com",
-        pass: "pdkhepujsmlmewmb",
+        user: "testeapiemail2000@gmail.com",
+        pass: "lhujsidyupwqgnnm"
       },
     });
 
     const mailOptions = {
-      from: "indhugetesteformulario@gmail.com",
-      to: "indhugetesteformulario@gmail.com",
+      from: "testeapiemail2000@gmail.com",
+      to: "testeapiemail2000@gmail.com",
       subject: "Novo formulário de contato",
       text: `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`,
     };
@@ -24,8 +24,9 @@ export default async function handler(req, res) {
       res.status(200).json({ message: 'Email enviado com sucesso!' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: 'Ocorreu um erro ao enviar o email.' });
-    }
+      res.status(500).json({ message: 'Ocorreu um erro ao enviar o email.' })
+        }
+        
   } else {
     res.status(405).json({ message: 'Método não permitido' });
   }

@@ -10,9 +10,9 @@ const Header = () => {
             <Image src={Logo}/>
         </div>
         <div className={Styles.menu}>
-            <Link href="./">HOME</Link>
-            <Link href="./produtos">PRODUTOS</Link>
-            <Link href="./cases">CASES</Link>
+            <Link href="/#home">HOME</Link>
+            <Link href="/#produtos">PRODUTOS</Link>
+            <Link href="/#clientes">CASES</Link>
         </div>
         <div className={Styles.botao}>
             <Link href="/#formulario"><button><label>ENTRE EM CONTATO</label></button></Link>
