@@ -12,6 +12,7 @@ export default async function handler(req, res) {
       },
     });
 
+//pega os dados preenchidos no formulário e envia para o email definido
     const mailOptions = {
       from: "testeapiemail2000@gmail.com",
       to: "testeapiemail2000@gmail.com",
@@ -19,6 +20,7 @@ export default async function handler(req, res) {
       text: `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`,
     };
 
+// tentar enviar o email e emite um popup de sucesso ou erro
     try {
       await transporter.sendMail(mailOptions);
       res.status(200).json({ message: 'Email enviado com sucesso!' });
