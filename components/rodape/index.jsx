@@ -31,13 +31,13 @@ const Rodape = () => {
         </div>
         <div className={Styles.logo}>
             <div id={Styles.logo}>
-                <Image src={Logo}/>
+                <Image alt="logo" src={Logo}/>
             </div>
             <div className={Styles.redessociais}>
-                <Link href={"https://www.instagram.com"}><Image src={Logoinstagram}/></Link>
-                <Link href={"https://www.facebook.com"}><Image src={Logofacebook}/></Link>
-                <Link href={"https://www.linkedin.com"}><Image src={Logolinkedin}/></Link>
-                <Link href={"https://www.youtube.com"}><Image src={Logoyoutube}/></Link>
+                <Link href={"https://www.instagram.com"}><Image alt="instagram" src={Logoinstagram}/></Link>
+                <Link href={"https://www.facebook.com"}><Image alt="facebook" src={Logofacebook}/></Link>
+                <Link href={"https://www.linkedin.com"}><Image alt="linkedin" src={Logolinkedin}/></Link>
+                <Link href={"https://www.youtube.com"}><Image alt="youtube" src={Logoyoutube}/></Link>
             </div>
         </div>
     </div>

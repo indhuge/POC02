@@ -7,7 +7,7 @@ import Logo from "../../public/assets/logo.png"
 const Header = () => {
     return <div className={Styles.container}>
         <div className={Styles.logo}>
-            <Image src={Logo}/>
+            <Image alt="logo" src={Logo}/>
         </div>
         <div className={Styles.menu}>
             <Link href="/#home">HOME</Link>

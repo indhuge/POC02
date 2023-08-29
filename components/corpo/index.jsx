@@ -18,9 +18,9 @@ const Corpo = () => {
         <div className={Styles.item4} id="clientes">
             <h2>CONHEÇA NOSSOS CLIENTES</h2>
             <div className={Styles.imagens}>
-                <div><Image src={Cliente}/></div>
-                <div><Image src={Cliente}/></div>
-                <div><Image src={Cliente}/></div>
+                <div><Image alt="cliente ficticio" src={Cliente}/></div>
+                <div><Image alt="cliente ficticio" src={Cliente}/></div>
+                <div><Image alt="cliente ficticio" src={Cliente}/></div>
             </div>
             <div className={Styles.botao}>
                 <button id="botao"><Link href="https://www.youtube.com/"><label>VER MAIS</label></Link></button>
