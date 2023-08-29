@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*adicionar alalytics*/}
+      {/*adicionaralalytics*/}
       <div className={Styles.container}>
         <Header className={Styles.header}/>
         <Banner className={Styles.banner}/>
