@@ -22,16 +22,4 @@ const Header = () => {
     </div>;
 };
 
-    //window.addEventListener("scroll", setScrollVar)
-
-
-/*function setScrollVar(){
-    const htmlElement = document.documentElement
-    const porcentagemscroll = htmlElement.scrollTop / htmlElement.clientHeight
-    console.log(Math.min(porcentagemscroll * 100, 100))
-    htmlElement.style.setProperty("--scroll", Math.min(porcentagemscroll * 100, 100))
-}
-
-setScrollVar()*/
-
 export default Header;

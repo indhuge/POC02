@@ -18,10 +18,10 @@ const Rodape = () => {
         </div>
         <div className={Styles.menu}>
             <h4>MENU</h4>
-            <Link href={""}>sobre nós</Link>
-            <Link href={""}>produtos</Link>
+            <Link href="/#home">sobre nós</Link>
+            <Link href="/#produtos">produtos</Link>
             <Link href={""}>suporte</Link>
-            <Link href={""}>cases</Link>
+            <Link href="/#clientes">cases</Link>
         </div>
         <div className={Styles.conteudos}>
             <h4>CONTEÚDOS</h4>
