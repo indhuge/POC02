@@ -36,7 +36,7 @@ const Formulario = () => {
             <h2>ENTRE EM CONTATO E TRANSFORME A SUA PRODUÇÃO</h2>
             <input type="text" name="nome" onChange={handleChange} placeholder=" NOME" required />
             <input type="email" name="email" onChange={handleChange} placeholder=" EMAIL" required />
-            <input type="text" name="telefone" onChange={handleChange} placeholder=" TELEFONE" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" required />
+            <input type="text" name="telefone" onChange={handleChange} placeholder=" TELEFONE" /*pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$"*/ required />
             <textarea className={Styles.mensagem} name="mensagem" onChange={handleChange} placeholder=' MENSAGEM' required ></textarea>
             <input type="submit" placeholder=" ENVIAR" />
         </form>
