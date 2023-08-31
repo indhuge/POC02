@@ -50,6 +50,7 @@ export default function Home() {
 					}}
 				/>
 			</Head>
+			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/43697916.js"/>
 			<div className={Styles.container}>
 				<Header className={Styles.header} />
 				<Banner />
