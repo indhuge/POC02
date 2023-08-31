@@ -2,7 +2,7 @@ import Styles from "./style.module.scss";
 import { useState } from "react";
 
 async function register(_email) {
-    const res = await fetch("/api/mailChimp", {
+    const res = await fetch("../../pages/api/mailchimp", {
         body: JSON.stringify({
             email: _email,
         }),
