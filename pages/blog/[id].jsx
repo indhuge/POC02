@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { isFilled, asLink } from "@prismicio/client";
-import { PrismicRichText, SliceZone } from "@prismicio/react";
+import { isFilled } from "@prismicio/client";
+import { SliceZone } from "@prismicio/react";
 import Styles from "./style.module.scss";
 import { components } from "@/slices";
 import { createClient } from "@/prismicio";
-import { PrismicNextImage } from "@prismicio/next";
 import Header from "@/components/headerBlog";
 import Rodape from "@/components/rodapeBlogPost";
 
@@ -32,7 +31,7 @@ export default function Page({ page }) {
 export async function getStaticProps({ params }) {
     const client = createClient();
     const page = await client.getByUID("blog_post", params.id);
-  
+    page.data = "{a}";
     return {
       props: { page },
     };
