@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    padding-top: 7vw;
+    padding-bottom: 2vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: justify;
+
+    .texto{
+        margin-left: 10%;
+    }
+
+    .imagem{
+        display: grid;
+        justify-items: center;
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .frame{
+        width: 100%;
+        height: fit-content !important;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        div{
+            width: 80%;
+            height: 45vw;
+            padding-bottom: 3vw;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

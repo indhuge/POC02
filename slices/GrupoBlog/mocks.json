@@ -1,0 +1,67 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"titulogrupo": {
+				"__TYPE__": "FieldContent",
+				"value": "sweet",
+				"type": "Text"
+			},
+			"idgrupo": {
+				"__TYPE__": "FieldContent",
+				"value": "shop",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"titulopost",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "cake",
+							"type": "Text"
+						}
+					],
+					[
+						"imagem",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+								"width": 5616,
+								"height": 3744
+							},
+							"url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+							"width": 5616,
+							"height": 3744,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "country",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

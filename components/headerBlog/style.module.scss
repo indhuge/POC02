@@ -1,0 +1,79 @@
+@media only screen and (max-width: 640px){
+    .container{
+        div{
+            margin: 0vw !important;
+            img{
+                margin: 0vw 10%  !important;
+            }
+        }
+        a{
+            font-size: 3.8vw !important;
+            margin: 0vw 1vw !important;
+            text-align: center !important;
+        }
+        button{
+            font-size: 3vw !important;
+            margin: 0vw 10%  !important;
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    padding: 1vw 0vw;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #DEDEDE;
+    z-index: 10;
+    height: auto;
+
+    .logo{
+        width: 100%;
+        margin-left: 20%;
+        img{
+            height: 4vw;
+            width: auto;
+        }
+    }
+
+    .menu{
+        font-size: 1.5vw;
+        a{
+            margin-left: 1vw;
+            margin-right: 1vw;
+            text-decoration: none;
+            color: black;
+        }
+        a :hover{
+            color: #F2B138;
+        }
+    }
+
+    .botao {
+        width: 100%;
+        a{
+            margin-left: 50%;
+            button{
+                font-size: 1vw;
+                background-color: #003F63;
+                color: white;
+                padding: 5%;
+                border-radius: 10vw;
+                border-width: 0;
+            }
+
+            :hover{
+                font-weight: bold;
+            }
+
+            :active{
+                background-color: #F2B138;
+            }
+        }
+
+
+    }
+}

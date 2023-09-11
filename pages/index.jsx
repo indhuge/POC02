@@ -2,33 +2,37 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Head from 'next/head'
 import Styles from "./style.module.scss"
-import Header from "../components/header"
+import Header from "../components/headerLanding"
 import Banner from "../components/banner"
-import Corpo from "../components/corpo"
 import { Inter } from 'next/font/google'
-import Formulario from '../components/formulario'
-import Rodape from '../components/rodape'
-import { useEffect } from "react";
-import Newsletter from '@/components/newsteller'
+import Rodape from '../components/rodapeLanding'
+import { useEffect, useState } from "react";
+import { createClient } from "@/prismicio";
+import { SliceZone } from "@prismicio/react";
+import { components } from "@/slices";
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
 
+
+export default function Home({ page }) {
 	/*conexão com o servidor do chatbot*/
 	useEffect(() => {
-		window.botpressWebChat.init({
-			composerPlaceholder: "Chat with IndHelp",
-			botConversationDescription: "Tire suas duvidas",
-			botId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-			hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-			messagingUrl: "https://messaging.botpress.cloud",
-			clientId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-			botName: "IndHelp",
-		});
+		async function carregaBot() {
+			await window.botpressWebChat?.init({
+				composerPlaceholder: "Chat with IndHelp",
+				botConversationDescription: "Tire suas duvidas",
+				botId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
+				hostUrl: "https://cdn.botpress.cloud/webchat/v0",
+				messagingUrl: "https://messaging.botpress.cloud",
+				clientId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
+				botName: "IndHelp",
+			});
+		}
+		carregaBot();
 	});
-
+	console.log(page.data);
 	return (
 		<>
 			<Head>
@@ -41,7 +45,7 @@ export default function Home() {
 
 				<script
 					dangerouslySetInnerHTML={{
-						__html:`
+						__html: `
 							window.dataLayer = window.dataLayer || [];
 							function gtag(){dataLayer.push(arguments);}
 							gtag('js', new Date());
@@ -50,16 +54,25 @@ export default function Home() {
 					}}
 				/>
 			</Head>
-			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/43697916.js"/>
+			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/43697916.js" />
 			<div className={Styles.container}>
-				<Header className={Styles.header} />
-				<Banner />
-				<Corpo />
-				<Formulario />
-				<Newsletter />
-				<Rodape />
+				<Header
+					className={Styles.header}
+					dados={page.data.header[0]}
+				/>
+				<Banner dados={page.data.banner[0]}/>
+				<SliceZone slices={page.data.slices} components={components}/>
+				<Rodape/>
 			</div>
-			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"/>
+			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
 		</>
-	)
+	);
+}
+
+export async function getStaticProps({ params, previewData }) {
+	const client = createClient({ previewData });
+	const page = await client.getSingle("landing_page")
+	return{
+		props: { page },
+	};
 }
