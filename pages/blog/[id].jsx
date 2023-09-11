@@ -31,7 +31,7 @@ export default function Page({ page }) {
 export async function getStaticProps({ params }) {
     const client = createClient();
     const page = await client.getByUID("blog_post", params.id);
-    page.data = "{a}";
+    if(page.data === undefined){ page.data = "{a}"}
     return {
       props: { page },
     };
