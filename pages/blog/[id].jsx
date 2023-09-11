@@ -8,6 +8,7 @@ import Header from "@/components/headerBlog";
 import Rodape from "@/components/rodapeBlogPost";
 
 export default function Page({ page }) {
+    if(page.data === undefined){ page.data = "{a}"}
     return (
         <>
             <Head>
@@ -31,7 +32,6 @@ export default function Page({ page }) {
 export async function getStaticProps({ params }) {
     const client = createClient();
     const page = await client.getByUID("blog_post", params.id);
-    if(page.data === undefined){ page.data = "{a}"}
     return {
       props: { page },
     };
