@@ -13,7 +13,7 @@ export default function Page({ page }) {
     return (
         <>
             <Head>
-                <title>{page.data.meta_title}</title>
+                <title>{page?.data?.meta_title}</title>
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
