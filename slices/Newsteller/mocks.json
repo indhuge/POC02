@@ -1,0 +1,19 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"titulo": {
+				"__TYPE__": "FieldContent",
+				"value": "friend",
+				"type": "Text"
+			},
+			"cor": {
+				"__TYPE__": "FieldContent",
+				"value": "#67aac8",
+				"type": "Color"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,192 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "size",
+							"type": "Text"
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#1cbc46",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "imagens",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "herself",
+							"type": "Text"
+						}
+					],
+					[
+						"img1",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+								"width": 3344,
+								"height": 2509
+							},
+							"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+							"width": 3344,
+							"height": 2509,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"img2",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+								"width": 4380,
+								"height": 2895
+							},
+							"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+							"width": 4380,
+							"height": 2895,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"img3",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+								"width": 4000,
+								"height": 4000
+							},
+							"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+							"width": 4000,
+							"height": 4000,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#312298",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "iFrame",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "pet",
+							"type": "Text"
+						}
+					],
+					[
+						"incorporado",
+						{
+							"embed_url": "https://twitter.com/prismicio/status/1354835716430319617",
+							"author_name": "Prismic",
+							"author_url": "https://twitter.com/prismicio",
+							"html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Does anyone want to create a wildly popular website for discussing &#39;Wall Street Bets&#39; using Prismic?<br><br>It may or may not have to look a lot like <a href=\"https://twitter.com/hashtag/reddit?src=hash&amp;ref_src=twsrc%5Etfw\">#reddit</a> and we won&#39;t make it private.<br><br>Just asking for some friends...</p>&mdash; Prismic (@prismicio) <a href=\"https://twitter.com/prismicio/status/1354835716430319617?ref_src=twsrc%5Etfw\">January 28, 2021</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
+							"type": "rich",
+							"cache_age": "3153600000",
+							"provider_name": "Twitter",
+							"provider_url": "http://www.twitter.com/",
+							"version": "1.0",
+							"all": {
+								"embed_url": "https://twitter.com/prismicio/status/1354835716430319617",
+								"author_name": "Prismic",
+								"author_url": "https://twitter.com/prismicio",
+								"html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Does anyone want to create a wildly popular website for discussing &#39;Wall Street Bets&#39; using Prismic?<br><br>It may or may not have to look a lot like <a href=\"https://twitter.com/hashtag/reddit?src=hash&amp;ref_src=twsrc%5Etfw\">#reddit</a> and we won&#39;t make it private.<br><br>Just asking for some friends...</p>&mdash; Prismic (@prismicio) <a href=\"https://twitter.com/prismicio/status/1354835716430319617?ref_src=twsrc%5Etfw\">January 28, 2021</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n",
+								"width": 550,
+								"height": null,
+								"type": "rich",
+								"cache_age": "3153600000",
+								"provider_name": "Twitter",
+								"provider_url": "http://www.twitter.com/",
+								"version": "1.0"
+							},
+							"__TYPE__": "EmbedContent"
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#fbb2ac",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	}
+]
