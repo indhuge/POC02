@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Head from "next/head";
 import { isFilled } from "@prismicio/client";
 import { SliceZone } from "@prismicio/react";

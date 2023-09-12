@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/exhaustive-deps */
 import Styles from "./style.module.scss"
 import Link from "next/link"
 import { useEffect, useState } from "react";
