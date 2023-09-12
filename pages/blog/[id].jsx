@@ -15,6 +15,7 @@ export default function Page({ page }) {
     const [data, setData] = useState([])
     const [logo, setLogo] = useState([])
     const [dados, setDados] = useState([])
+    const [header, setHeader] = useState([])
 
     useEffect(() =>{
         setData(data);
@@ -26,6 +27,10 @@ export default function Page({ page }) {
 
     useEffect(() =>{
         setDados(dados);
+    }, [])
+
+    useEffect(() =>{
+        setHeader(header);
     }, [])
 
     return (
