@@ -6,10 +6,17 @@ import { components } from "@/slices";
 import { createClient } from "@/prismicio";
 import Header from "@/components/headerBlog";
 import Rodape from "@/components/rodapeBlogPost";
+import { useEffect, useState } from "react";
+
+
 
 export default function Page({ page }) {
-    if (page.data === undefined) { page.data = "{a}" }
-    console.log(page?.data)
+
+    const [data, setData] = useState([])
+
+    useEffect(() =>{
+        setData(data);
+    }, [])
     return (
         <>
             <Head>
@@ -29,6 +36,8 @@ export default function Page({ page }) {
         </>
     );
 }
+
+
 
 export async function getStaticProps({ params }) {
     const client = createClient();
