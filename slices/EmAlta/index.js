@@ -16,7 +16,7 @@ const EmAlta = ({ slice }) => {
 		>
 			<div className={Styles.container}>
 				<h1>{slice.primary.titulogrupo}</h1>
-				<div className={Styles.posts} >
+				<div className={Styles.posts} style={{["grid-template-columns"]: "repeat("+slice.items.length+", 1fr )"}} >
 					{slice.items.map((i, index) => {
 						return (
 							<PrismicNextLink href={i.link} className={Styles.item} key={index}>
