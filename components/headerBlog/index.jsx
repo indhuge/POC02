@@ -17,7 +17,7 @@ const Header = ({
     console.log({dados});
     return <div className={Styles.container}>
         <div className={Styles.logo}>
-            <img alt="logo" src={dados.logo.url}/>
+            <img alt="logo" src={dados?.logo?.url}/>
         </div>
         <div className={Styles.menu}>
             <Link href={dados.link1}>{dados.linklabel1}</Link>
