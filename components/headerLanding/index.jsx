@@ -10,14 +10,9 @@ const Header = ({
 }) => {
 
     const [logo, setLogo] = useState([])
-    const [auth, setAuth] = useState([])
 
     useEffect(() =>{
         setLogo(logo);
-    }, [])
-
-    useEffect(() =>{
-        setAuth(auth);
     }, [])
     
     console.log({dados});

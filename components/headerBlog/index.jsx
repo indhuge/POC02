@@ -9,16 +9,11 @@ const Header = ({
 }) => {
 
     const [logo, setLogo] = useState([])
-    const [auth, setAuth] = useState([])
 
     useEffect(() =>{
         setLogo(logo);
     }, [])
-
-    useEffect(() =>{
-        setAuth(auth);
-    }, [])
-
+    
     console.log({dados});
     return <div className={Styles.container}>
         <div className={Styles.logo}>

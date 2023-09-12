@@ -11,7 +11,7 @@ import { components } from "@/slices";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ page }) {
-    console.log(page.data);
+    console.log(page?.data);
     return (
         <>
             <Head>
@@ -37,9 +37,9 @@ export default function Home({ page }) {
             <div className={Styles.container}>
                 <Header
                     className={Styles.header}
-                    dados={page.data.header[0]}
+                    dados={page?.data?.header[0]}
                 />
-                <SliceZone slices={page.data.slices} components={components} />
+                <SliceZone slices={page?.data?.slices} components={components} />
                 <Rodape />
             </div>
             <script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
