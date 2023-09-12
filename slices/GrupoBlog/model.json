@@ -1,0 +1,56 @@
+{
+  "id": "grupo_blog",
+  "type": "SharedSlice",
+  "name": "GrupoBlog",
+  "description": "GrupoBlog",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titulogrupo": {
+          "type": "Text",
+          "config": {
+            "label": "Titulo Grupo",
+            "placeholder": ""
+          }
+        },
+        "idgrupo": {
+          "type": "Text",
+          "config": {
+            "label": "ID Grupo",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "titulopost": {
+          "type": "Text",
+          "config": {
+            "label": "Titulo Post",
+            "placeholder": ""
+          }
+        },
+        "imagem": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "link": {
+          "type": "Text",
+          "config": {
+            "label": "Link",
+            "placeholder": "./blog"
+          }
+        }
+      }
+    }
+  ]
+}

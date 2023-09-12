@@ -25,7 +25,7 @@ const Rodape = () => {
         </div>
         <div className={Styles.conteudos}>
             <h4>CONTEÚDOS</h4>
-            <Link href={""}>blog</Link>
+            <Link href={"/blog"}>blog</Link>
             <Link href={""}>tutoriais</Link>
             <Link href={""}>conteúdo exclusivo</Link>
         </div>

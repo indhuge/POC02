@@ -1,0 +1,65 @@
+{
+  "id": "blog_conteudo",
+  "type": "SharedSlice",
+  "name": "BlogConteudo",
+  "description": "BlogConteudo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "texto": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Texto",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "imagem",
+      "name": "Imagem",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "imagem": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "iFrame",
+      "name": "iFrame",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "frame": {
+          "type": "Embed",
+          "config": {
+            "label": "Frame",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

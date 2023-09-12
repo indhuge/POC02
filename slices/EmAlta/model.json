@@ -1,0 +1,49 @@
+{
+  "id": "em_alta",
+  "type": "SharedSlice",
+  "name": "EmAlta",
+  "description": "EmAlta",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titulogrupo": {
+          "type": "Text",
+          "config": {
+            "label": "TItulo Grupo",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "titulopost": {
+          "type": "Text",
+          "config": {
+            "label": "Titulo Post",
+            "placeholder": ""
+          }
+        },
+        "imagem": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "link": {
+          "type": "Text",
+          "config": {
+            "label": "Link",
+            "placeholder": "./blog"
+          }
+        }
+      }
+    }
+  ]
+}
