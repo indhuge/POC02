@@ -9,9 +9,14 @@ const Header = ({
 }) => {
 
     const [logo, setLogo] = useState([])
+    const [url, setUrl] = useState([])
 
     useEffect(() =>{
         setLogo(logo);
+    }, [])
+
+    useEffect(() =>{
+        setUrl(url);
     }, [])
 
     console.log({dados});
