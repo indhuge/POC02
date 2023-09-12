@@ -10,17 +10,17 @@ import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 const GrupoBlog = ({ slice }) => {
     return (
         <section
-            data-slice-type={slice.slice_type}
-            data-slice-variation={slice.variation}
+            data-slice-type={slice?.slice_type}
+            data-slice-variation={slice?.variation}
         >
-            <div className={Styles.container} id={slice.primary.idgrupo}>
-                <h1><span>{slice.primary.titulogrupo}</span></h1>
+            <div className={Styles.container} id={slice?.primary?.idgrupo}>
+                <h1><span>{slice?.primary?.titulogrupo}</span></h1>
                 <div className={Styles.posts} >
                     {slice.items.map((i, index) => {
                         return (
-                            <PrismicNextLink href={i.link} className={Styles.item} key={index}>
-                                <PrismicNextImage field={i.imagem} />
-                                <h2>{i.titulopost}</h2>
+                            <PrismicNextLink href={i?.link ?? ''} className={Styles?.item} key={index}>
+                                <PrismicNextImage field={i?.imagem} />
+                                <h2>{i?.titulopost}</h2>
                             </PrismicNextLink>
                         );
                     })}
