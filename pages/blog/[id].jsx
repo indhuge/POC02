@@ -13,10 +13,16 @@ import { useEffect, useState } from "react";
 export default function Page({ page }) {
 
     const [data, setData] = useState([])
+    const [logo, setLogo] = useState([])
 
     useEffect(() =>{
         setData(data);
     }, [])
+
+    useEffect(() =>{
+        setLogo(logo);
+    }, [])
+
     return (
         <>
             <Head>

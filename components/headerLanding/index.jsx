@@ -1,19 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Styles from "./style.module.scss"
 import Link from "next/link"
-import { useEffect, useState } from "react";
-
 
 const Header = ({
     className,
     dados
 }) => {
-
-    const [logo, setLogo] = useState([])
-
-    useEffect(() =>{
-        setLogo(logo);
-    }, [])
     
     console.log({dados});
     return <div className={Styles.container}>
