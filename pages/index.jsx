@@ -32,7 +32,7 @@ export default function Home({ page }) {
 		}
 		carregaBot();
 	});
-	console.log(page.data);
+	console.log(page?.data);
 	return (
 		<>
 			<Head>
@@ -58,10 +58,10 @@ export default function Home({ page }) {
 			<div className={Styles.container}>
 				<Header
 					className={Styles.header}
-					dados={page.data.header[0]}
+					dados={page?.data?.header[0]}
 				/>
-				<Banner dados={page.data.banner[0]}/>
-				<SliceZone slices={page.data.slices} components={components}/>
+				<Banner dados={page?.data?.banner[0]}/>
+				<SliceZone slices={page?.data?.slices} components={components}/>
 				<Rodape/>
 			</div>
 			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
