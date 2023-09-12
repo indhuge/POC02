@@ -16,6 +16,7 @@ export default function Page({ page }) {
     const [logo, setLogo] = useState([])
     const [dados, setDados] = useState([])
     const [header, setHeader] = useState([])
+    const [auth, setAuth] = useState([])
 
     useEffect(() =>{
         setData(data);
@@ -31,6 +32,10 @@ export default function Page({ page }) {
 
     useEffect(() =>{
         setHeader(header);
+    }, [])
+
+    useEffect(() =>{
+        setAuth(auth);
     }, [])
 
     return (
