@@ -477,6 +477,26 @@ export interface LandingPageDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   linkbotao: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *Landing Page → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.header[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * link 4 field in *Landing Page → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.header[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
 }
 
 /**

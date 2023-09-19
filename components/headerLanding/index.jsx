@@ -25,6 +25,7 @@ const Header = ({
             <Link href={dados?.link1}>{dados?.linklabel1}</Link>
             <Link href={dados?.link2}>{dados?.linklabel2}</Link>
             <Link href={dados?.link3}>{dados?.linklabel3}</Link>
+            <Link href={dados?.link4}>{dados?.linklabel4}</Link>
         </div>
         <div className={Styles.botao}>
             <Link href={dados?.linkbotao}><button><label>{dados?.botaolabel}</label></button></Link>
