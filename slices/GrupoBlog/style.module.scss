@@ -27,10 +27,12 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    background-color: #DEDEDE;
 
     .item {
         width: 90%;
-        background-color: #D9D9D9;
+        height: 100%;
+        background-color: #DEDEDE;
         text-decoration: none;
         color: black;
 
@@ -41,8 +43,9 @@
         }
 
         h2 {
-            height: 20%;
             text-align: center;
+            height: 20%;
+            font-size: auto;
         }
     }
 }
