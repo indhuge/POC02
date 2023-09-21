@@ -109,6 +109,142 @@
           }
         }
       }
+    },
+    {
+      "id": "logos",
+      "name": "logos",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "titulologos": {
+          "type": "Text",
+          "config": {
+            "label": "titulologos",
+            "placeholder": ""
+          }
+        },
+        "logo1": {
+          "type": "Image",
+          "config": {
+            "label": "logo 1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "logo2": {
+          "type": "Image",
+          "config": {
+            "label": "logo 2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "logo3": {
+          "type": "Image",
+          "config": {
+            "label": "logo 3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "logo4": {
+          "type": "Image",
+          "config": {
+            "label": "logo 4",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "logo5": {
+          "type": "Image",
+          "config": {
+            "label": "logo 5",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    },
+    {
+      "id": "depoimentos",
+      "name": "depoimentos",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "depoimento1": {
+          "type": "Text",
+          "config": {
+            "label": "depoimento1",
+            "placeholder": ""
+          }
+        },
+        "nome1": {
+          "type": "Text",
+          "config": {
+            "label": "nome1",
+            "placeholder": ""
+          }
+        },
+        "depoimento2": {
+          "type": "Text",
+          "config": {
+            "label": "depoimento2",
+            "placeholder": ""
+          }
+        },
+        "nome2": {
+          "type": "Text",
+          "config": {
+            "label": "nome2",
+            "placeholder": ""
+          }
+        },
+        "depoimento3": {
+          "type": "Text",
+          "config": {
+            "label": "depoimento3",
+            "placeholder": ""
+          }
+        },
+        "nome3": {
+          "type": "Text",
+          "config": {
+            "label": "nome3",
+            "placeholder": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "gatilhossociais",
+      "name": "gatilhos sociais",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "numero": {
+          "type": "Text",
+          "config": {
+            "label": "numero",
+            "placeholder": ""
+          }
+        },
+        "frase": {
+          "type": "Text",
+          "config": {
+            "label": "frase",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }
