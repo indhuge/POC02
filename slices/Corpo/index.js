@@ -43,6 +43,14 @@ const Corpo = ({ slice }) => {
 									</div>
 								</>
 							)}
+							{slice.variation === "gatilhossociais" && (
+								<>
+									<div className={Styles.gs}>
+										<h3>{i.numero}</h3>
+										<a>{i.frase}</a>							
+									</div>
+								</>
+							)}
 						</div>
 					</div>
 				);
