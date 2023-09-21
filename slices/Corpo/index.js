@@ -51,6 +51,34 @@ const Corpo = ({ slice }) => {
 									</div>
 								</>
 							)}
+							{slice.variation === "logos" && (
+								<>
+								<div className={Styles.logotitulo}>
+								<h3>{i.titulologos}</h3>
+								</div>
+									<div className={Styles.logos}>
+									<div ><PrismicNextImage field={i.logo1}/></div>
+									<div ><PrismicNextImage field={i.logo2}/></div>
+									<div ><PrismicNextImage field={i.logo3}/></div>
+									<div ><PrismicNextImage field={i.logo4}/></div>
+									<div ><PrismicNextImage field={i.logo5}/></div>							
+									</div>
+								</>
+							)}
+							{slice.variation === "depoimentos" && (
+								<>
+								<div className={Styles.depoimentos}>
+								<a>{i.depoimento1}</a>
+								<a>{i.depoimento2}</a>
+								<a>{i.depoimento3}</a>
+								<h4>{i.nome1}</h4>
+								<h4>{i.nome2}</h4>
+								<h4>{i.nome3}</h4>
+								
+					
+								</div>
+								</>
+							)}
 						</div>
 					</div>
 				);
