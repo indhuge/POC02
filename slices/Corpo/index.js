@@ -7,6 +7,7 @@
 import Styles from "./style.module.scss"
 import { PrismicNextImage } from "@prismicio/next";
 import Link from "next/link";
+import { PrismicRichText } from "@prismicio/react";
 
 const Corpo = ({ slice }) => {
 	let t = 0;
@@ -41,6 +42,43 @@ const Corpo = ({ slice }) => {
 									<div className={Styles.frame}>
 										<div dangerouslySetInnerHTML={{ __html: i.incorporado.html }}/>
 									</div>
+								</>
+							)}
+							{slice.variation === "gatilhossociais" && (
+								<>
+									<div className={Styles.gs}>
+										<h3>{i.numero}</h3>
+										<a>{i.frase}</a>							
+									</div>
+								</>
+							)}
+							{slice.variation === "logos" && (
+								<>
+								<div className={Styles.logotitulo}>
+								<h3>{i.titulologos}</h3>
+								</div>
+									<div className={Styles.logos}>
+									<div ><PrismicNextImage field={i.logo1}/></div>
+									<div ><PrismicNextImage field={i.logo2}/></div>
+									<div ><PrismicNextImage field={i.logo3}/></div>
+									<div ><PrismicNextImage field={i.logo4}/></div>
+									<div ><PrismicNextImage field={i.logo5}/></div>							
+									</div>
+								</>
+							)}
+							{slice.variation === "depoimentos" && (
+								<>
+								<div className={Styles.depoimentos}>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
+								
+								
+					
+								</div>
 								</>
 							)}
 						</div>

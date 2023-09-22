@@ -5,7 +5,7 @@
     padding-bottom: 2vw;
     padding-top: 2vw;
 
-    h1 {
+    h2 {
         padding-left: 7vw;
         padding-top: 1vw;
         color: white;
@@ -27,10 +27,12 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    background-color: #DEDEDE;
 
     .item {
         width: 90%;
-        background-color: #D9D9D9;
+        height: 100%;
+        background-color: #DEDEDE;
         text-decoration: none;
         color: black;
 
@@ -40,9 +42,10 @@
             height: 80%;
         }
 
-        h2 {
-            height: 20%;
+        h3 {
             text-align: center;
+            height: 20%;
+            font-size: 1.5vw;
         }
     }
 }

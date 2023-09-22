@@ -15,13 +15,13 @@ const EmAlta = ({ slice }) => {
 			data-slice-variation={slice.variation}
 		>
 			<div className={Styles.container}>
-				<h1>{slice.primary.titulogrupo}</h1>
+				<h2>{slice.primary.titulogrupo}</h2>
 				<div className={Styles.posts} style={{["grid-template-columns"]: "repeat("+slice.items.length+", 1fr )"}} >
 					{slice.items.map((i, index) => {
 						return (
 							<PrismicNextLink href={i.link} className={Styles.item} key={index}>
 								<PrismicNextImage field={i.imagem} />
-								<h2>{i.titulopost}</h2>
+								<h3>{i.titulopost}</h3>
 							</PrismicNextLink>
 						);
 					})}

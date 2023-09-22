@@ -80,6 +80,20 @@
                 "label": "Link Botao",
                 "placeholder": ""
               }
+            },
+            "linklabel4": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 4",
+                "placeholder": ""
+              }
+            },
+            "link4": {
+              "type": "Text",
+              "config": {
+                "label": "link 4",
+                "placeholder": ""
+              }
             }
           }
         }
@@ -95,7 +109,7 @@
                 "label": "Texto",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "multi": "heading2"
+                "multi": "heading1,strong,em"
               }
             },
             "img_esq": {

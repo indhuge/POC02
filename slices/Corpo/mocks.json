@@ -188,5 +188,279 @@
 				]
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "logos",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"titulologos",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "outside",
+							"type": "Text"
+						}
+					],
+					[
+						"logo1",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+								"width": 3935,
+								"height": 5894
+							},
+							"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
+							"width": 3935,
+							"height": 5894,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"logo2",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+								"width": 4010,
+								"height": 4010
+							},
+							"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+							"width": 4010,
+							"height": 4010,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"logo3",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+								"width": 3212,
+								"height": 3880
+							},
+							"url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
+							"width": 3212,
+							"height": 3880,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"logo4",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+								"width": 4752,
+								"height": 3168
+							},
+							"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+							"width": 4752,
+							"height": 3168,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"logo5",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+								"width": 4016,
+								"height": 6016
+							},
+							"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+							"width": 4016,
+							"height": 6016,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "depoimentos",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"depoimento_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Eiusmod do pariatur consequat elit occaecat mollit commodo ad veniam eiusmod. Non aute minim anim ut et Lorem fugiat dolor laboris."
+									}
+								}
+							]
+						}
+					],
+					[
+						"depoimento_2",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Eiusmod aliqua non occaecat nostrud ad ea occaecat officia culpa velit sunt proident. Laborum aliquip excepteur ipsum aute. Ad anim aliqua consequat nisi elit labore nulla mollit occaecat anim in id cupidatat deserunt in."
+									}
+								}
+							]
+						}
+					],
+					[
+						"depoimento_3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Nulla nostrud do magna aliqua voluptate elit in excepteur excepteur Lorem fugiat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"nome_1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ipsum ea commodo adipisicing laborum nostrud occaecat excepteur quis proident do occaecat quis commodo exercitation. Officia exercitation proident ipsum mollit quis dolore cillum ea consequat incididunt veniam elit. Eu nulla reprehenderit cupidatat nostrud aute irure consequat tempor duis sunt sit exercitation cupidatat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"nome_2",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ea aliquip aliquip commodo anim commodo qui consequat."
+									}
+								}
+							]
+						}
+					],
+					[
+						"nome_3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Irure veniam anim reprehenderit cupidatat est enim eiusmod Lorem. Est anim exercitation esse labore aliqua non qui tempor deserunt occaecat sint."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "gatilhossociais",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"numero",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "four",
+							"type": "Text"
+						}
+					],
+					[
+						"frase",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "was",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
 	}
 ]
