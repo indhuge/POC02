@@ -1001,64 +1001,64 @@ export type CorpoSliceLogos = prismic.SharedSliceVariation<
  */
 export interface CorpoSliceDepoimentosItem {
   /**
-   * depoimento1 field in *Corpo → Items*
+   * Depoimento 1 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].depoimento1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].depoimento_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  depoimento1: prismic.KeyTextField;
+  depoimento_1: prismic.RichTextField;
 
   /**
-   * nome1 field in *Corpo → Items*
+   * Depoimento 2 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].nome1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].depoimento_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  nome1: prismic.KeyTextField;
+  depoimento_2: prismic.RichTextField;
 
   /**
-   * depoimento2 field in *Corpo → Items*
+   * Depoimento 3 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].depoimento2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].depoimento_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  depoimento2: prismic.KeyTextField;
+  depoimento_3: prismic.RichTextField;
 
   /**
-   * nome2 field in *Corpo → Items*
+   * Nome 1 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].nome2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].nome_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  nome2: prismic.KeyTextField;
+  nome_1: prismic.RichTextField;
 
   /**
-   * depoimento3 field in *Corpo → Items*
+   * Nome 2 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].depoimento3
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].nome_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  depoimento3: prismic.KeyTextField;
+  nome_2: prismic.RichTextField;
 
   /**
-   * nome3 field in *Corpo → Items*
+   * Nome 3 field in *Corpo → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].nome3
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **API ID Path**: corpo.items[].nome_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  nome3: prismic.KeyTextField;
+  nome_3: prismic.RichTextField;
 }
 
 /**

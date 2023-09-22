@@ -48,7 +48,7 @@ const Newsteller = ({ slice }) => {
 				className={Styles.container}
 				style={{ ["backgroundColor"]: slice.primary.cor }}
 			>
-				<h1>{slice.primary.titulo}</h1>
+				<h2>{slice.primary.titulo}</h2>
 				<form onSubmit={submit}>
 					<input
 						type="email"

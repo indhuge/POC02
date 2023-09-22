@@ -7,6 +7,7 @@
 import Styles from "./style.module.scss"
 import { PrismicNextImage } from "@prismicio/next";
 import Link from "next/link";
+import { PrismicRichText } from "@prismicio/react";
 
 const Corpo = ({ slice }) => {
 	let t = 0;
@@ -68,12 +69,13 @@ const Corpo = ({ slice }) => {
 							{slice.variation === "depoimentos" && (
 								<>
 								<div className={Styles.depoimentos}>
-								<a>{i.depoimento1}</a>
-								<a>{i.depoimento2}</a>
-								<a>{i.depoimento3}</a>
-								<h4>{i.nome1}</h4>
-								<h4>{i.nome2}</h4>
-								<h4>{i.nome3}</h4>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
+								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
+								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
+								
 								
 					
 								</div>
