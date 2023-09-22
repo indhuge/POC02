@@ -12,7 +12,7 @@ import Logoyoutube from "../../public/assets/iconeyoutube.png"
 const Rodape = () => {
     return <div className={Styles.container}>
         <div className={Styles.contato}>
-            <h1>INDHUGE</h1>
+            <h2>INDHUGE</h2>
             <label>0800 800 800</label>
             <label>email@indhuge.com</label>
         </div>

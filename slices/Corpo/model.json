@@ -177,46 +177,58 @@
       "imageUrl": "",
       "primary": {},
       "items": {
-        "depoimento1": {
-          "type": "Text",
+        "depoimento_1": {
+          "type": "StructuredText",
           "config": {
-            "label": "depoimento1",
-            "placeholder": ""
+            "label": "Depoimento 1",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading5,heading6,strong,em,list-item,o-list-item,heading3,heading4,paragraph,preformatted,rtl"
           }
         },
-        "nome1": {
-          "type": "Text",
+        "depoimento_2": {
+          "type": "StructuredText",
           "config": {
-            "label": "nome1",
-            "placeholder": ""
+            "label": "Depoimento 2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,rtl"
           }
         },
-        "depoimento2": {
-          "type": "Text",
+        "depoimento_3": {
+          "type": "StructuredText",
           "config": {
-            "label": "depoimento2",
-            "placeholder": ""
+            "label": "Depoimento 3",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,rtl"
           }
         },
-        "nome2": {
-          "type": "Text",
+        "nome_1": {
+          "type": "StructuredText",
           "config": {
-            "label": "nome2",
-            "placeholder": ""
+            "label": "Nome 1",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,rtl"
           }
         },
-        "depoimento3": {
-          "type": "Text",
+        "nome_2": {
+          "type": "StructuredText",
           "config": {
-            "label": "depoimento3",
-            "placeholder": ""
+            "label": "Nome 2",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,rtl"
           }
         },
-        "nome3": {
-          "type": "Text",
+        "nome_3": {
+          "type": "StructuredText",
           "config": {
-            "label": "nome3",
-            "placeholder": ""
+            "label": "Nome 3",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,rtl"
           }
         }
       }
