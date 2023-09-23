@@ -919,12 +919,209 @@ export type CorpoSliceIFrame = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceLogosItem {
+  /**
+   * titulologos field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].titulologos
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulologos: prismic.KeyTextField;
+
+  /**
+   * logo 1 field in *Corpo → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].logo1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo1: prismic.ImageField<never>;
+
+  /**
+   * logo 2 field in *Corpo → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].logo2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo2: prismic.ImageField<never>;
+
+  /**
+   * logo 3 field in *Corpo → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].logo3
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo3: prismic.ImageField<never>;
+
+  /**
+   * logo 4 field in *Corpo → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].logo4
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo4: prismic.ImageField<never>;
+
+  /**
+   * logo 5 field in *Corpo → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].logo5
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo5: prismic.ImageField<never>;
+}
+
+/**
+ * logos variation for Corpo Slice
+ *
+ * - **API ID**: `logos`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceLogos = prismic.SharedSliceVariation<
+  "logos",
+  Record<string, never>,
+  Simplify<CorpoSliceLogosItem>
+>;
+
+/**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceDepoimentosItem {
+  /**
+   * Depoimento 1 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].depoimento_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  depoimento_1: prismic.RichTextField;
+
+  /**
+   * Depoimento 2 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].depoimento_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  depoimento_2: prismic.RichTextField;
+
+  /**
+   * Depoimento 3 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].depoimento_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  depoimento_3: prismic.RichTextField;
+
+  /**
+   * Nome 1 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].nome_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  nome_1: prismic.RichTextField;
+
+  /**
+   * Nome 2 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].nome_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  nome_2: prismic.RichTextField;
+
+  /**
+   * Nome 3 field in *Corpo → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].nome_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  nome_3: prismic.RichTextField;
+}
+
+/**
+ * depoimentos variation for Corpo Slice
+ *
+ * - **API ID**: `depoimentos`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceDepoimentos = prismic.SharedSliceVariation<
+  "depoimentos",
+  Record<string, never>,
+  Simplify<CorpoSliceDepoimentosItem>
+>;
+
+/**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceGatilhossociaisItem {
+  /**
+   * numero field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].numero
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  numero: prismic.KeyTextField;
+
+  /**
+   * frase field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].frase
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  frase: prismic.KeyTextField;
+}
+
+/**
+ * gatilhos sociais variation for Corpo Slice
+ *
+ * - **API ID**: `gatilhossociais`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceGatilhossociais = prismic.SharedSliceVariation<
+  "gatilhossociais",
+  Record<string, never>,
+  Simplify<CorpoSliceGatilhossociaisItem>
+>;
+
+/**
  * Slice variation for *Corpo*
  */
 type CorpoSliceVariation =
   | CorpoSliceDefault
   | CorpoSliceImagens
-  | CorpoSliceIFrame;
+  | CorpoSliceIFrame
+  | CorpoSliceLogos
+  | CorpoSliceDepoimentos
+  | CorpoSliceGatilhossociais;
 
 /**
  * Corpo Shared Slice
@@ -1248,10 +1445,16 @@ declare module "@prismicio/client" {
       CorpoSliceDefaultItem,
       CorpoSliceImagensItem,
       CorpoSliceIFrameItem,
+      CorpoSliceLogosItem,
+      CorpoSliceDepoimentosItem,
+      CorpoSliceGatilhossociaisItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
       CorpoSliceIFrame,
+      CorpoSliceLogos,
+      CorpoSliceDepoimentos,
+      CorpoSliceGatilhossociais,
       EmAltaSlice,
       EmAltaSliceDefaultPrimary,
       EmAltaSliceDefaultItem,

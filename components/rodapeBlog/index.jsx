@@ -17,12 +17,12 @@ const Rodape = () => {
             </div>
         </div>
         <div className={Styles.contato}>
-            <Link href="./"><h1>INDHUGE</h1></Link>
+            <Link href="./"><h2>INDHUGE</h2></Link>
             <label>0800 800 800</label>
             <label>email@indhuge.com</label>
         </div>
         <div className={Styles.menu}>
-            <h2>Categorias</h2>
+            <h3>Categorias</h3>
             <Link href="./blog#gestao">Gestão</Link>
             <Link href="./blog#manutencao">Manutenção</Link>
             <Link href="./blog#industria40">Industria 4.0</Link>
