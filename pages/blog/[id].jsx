@@ -61,7 +61,7 @@ export default function Page({ page }) {
 
 
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const client = createClient();
     const page = await client.getByUID("blog_post", params?.id);
     return {
@@ -69,7 +69,7 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export function getStaticPaths() {
+export function getServerSidePaths() {
     return {
         paths: ["/blog/teste"],
         fallback: true,

@@ -69,7 +69,7 @@ export default function Home({ page }) {
 	);
 }
 
-export async function getStaticProps({ params, previewData }) {
+export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
 	const page = await client.getSingle("landing_page")
 	return{
