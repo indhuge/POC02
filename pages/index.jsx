@@ -6,10 +6,11 @@ import Header from "../components/headerLanding"
 import Banner from "../components/banner"
 import { Inter } from 'next/font/google'
 import Rodape from '../components/rodapeLanding'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
+import Popup from '../components/Popup'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -56,6 +57,10 @@ export default function Home({ page }) {
 			</Head>
 			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/43697916.js" />
 			<div className={Styles.container}>
+				<Popup
+					texto={page?.data?.popuptexto}
+					imagem={page?.data?.popupimagem}
+				/>
 				<Header
 					className={Styles.header}
 					dados={page?.data?.header[0]}

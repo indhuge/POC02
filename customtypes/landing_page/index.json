@@ -98,6 +98,26 @@
           }
         }
       },
+      "popuptexto": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Popup Texto",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "popupimagem": {
+        "type": "Image",
+        "config": {
+          "label": "Popup Imagem",
+          "constraint": {
+            "width": 720,
+            "height": 1280
+          },
+          "thumbnails": []
+        }
+      },
       "banner": {
         "type": "Group",
         "config": {

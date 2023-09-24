@@ -585,6 +585,28 @@ interface LandingPageDocumentData {
   header: prismic.GroupField<Simplify<LandingPageDocumentDataHeaderItem>>;
 
   /**
+   * Popup Texto field in *Landing Page*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.popuptexto
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  popuptexto: prismic.RichTextField;
+
+  /**
+   * Popup Imagem field in *Landing Page*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.popupimagem
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  popupimagem: prismic.ImageField<never>;
+
+  /**
    * Banner field in *Landing Page*
    *
    * - **Field Type**: Group
