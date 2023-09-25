@@ -44,6 +44,7 @@ export default function Page({ page }) {
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
+                <meta property="og:image" content={page?.data?.meta_image} />
             </Head>
             <>
                 <Header
