@@ -12,6 +12,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#1ad3b1",
 				"type": "Color"
+			},
+			"ingles": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []

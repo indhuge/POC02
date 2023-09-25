@@ -2,8 +2,8 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from 'next/head'
 import Styles from "./style.module.scss"
-import Header from "../components/headerBlog"
-import Rodape from '../components/rodapeBlog'
+import Header from "../../components/headerBlog"
+import Rodape from '../../components/rodapeBlog'
 import { Inter } from 'next/font/google'
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
@@ -41,7 +41,7 @@ export default function Home({ page }) {
                     dados={page?.data?.header[0]}
                 />
                 <SliceZone slices={page?.data?.slices} components={components} />
-                <Rodape />
+                <Rodape dados={page?.data?.rodape[0]}/>
             </div>
             <script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
         </>
@@ -51,7 +51,7 @@ export default function Home({ page }) {
 
 export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
-	const page = await client.getSingle("blog")
+	const page = await client.getByUID("blog", "blog")
 	return{
 		props: { page },
 	};

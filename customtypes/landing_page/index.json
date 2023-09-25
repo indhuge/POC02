@@ -94,6 +94,15 @@
                 "label": "link 4",
                 "placeholder": ""
               }
+            },
+            "idioma": {
+              "type": "Boolean",
+              "config": {
+                "label": "Ingles?",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
             }
           }
         }
@@ -167,6 +176,134 @@
               "type": "Text",
               "config": {
                 "label": "Link Botao",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "rodapemenu": {
+        "type": "Group",
+        "config": {
+          "label": "Rodape Menu",
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Titulo",
+                "placeholder": ""
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
+                "placeholder": ""
+              }
+            },
+            "linklabel4": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 4",
+                "placeholder": ""
+              }
+            },
+            "link4": {
+              "type": "Text",
+              "config": {
+                "label": "Link 4",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "rodapeconteudos": {
+        "type": "Group",
+        "config": {
+          "label": "Rodape Conteudos",
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Titulo",
+                "placeholder": ""
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
                 "placeholder": ""
               }
             }

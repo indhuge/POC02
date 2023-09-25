@@ -21,13 +21,13 @@
 .container{
     width: 100%;
     padding: 1vw 0vw;
-    position: fixed;
+    position: fixed !important;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 6fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     background-color: #DEDEDE;
-    z-index: 10;
+    z-index: 3 !important;
     height: auto;
 
     .logo{
@@ -75,5 +75,11 @@
         }
 
 
+    }
+
+    .idioma{
+        width: 50%;
+        height: 20%;
+        justify-self: end;
     }
 }

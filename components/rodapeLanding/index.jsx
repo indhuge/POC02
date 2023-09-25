@@ -9,7 +9,10 @@ import Logolinkedin from "../../public/assets/iconelinkedin.png"
 import Logoyoutube from "../../public/assets/iconeyoutube.png"
 
 
-const Rodape = () => {
+const Rodape = ({
+    menu,
+    conteudos
+}) => {
     return <div className={Styles.container}>
         <div className={Styles.contato}>
             <h2>INDHUGE</h2>
@@ -17,17 +20,17 @@ const Rodape = () => {
             <label>email@indhuge.com</label>
         </div>
         <div className={Styles.menu}>
-            <h4>MENU</h4>
-            <Link href="/#home">sobre nós</Link>
-            <Link href="/#produtos">produtos</Link>
-            <Link href={""}>suporte</Link>
-            <Link href="/#clientes">cases</Link>
+            <h4>{menu?.titulo}</h4>
+            <Link href={menu?.link1}>{menu?.linklabel1}</Link>
+            <Link href={menu?.link2}>{menu?.linklabel2}</Link>
+            <Link href={menu?.link3}>{menu?.linklabel3}</Link>
+            <Link href={menu?.link4}>{menu?.linklabel4}</Link>
         </div>
         <div className={Styles.conteudos}>
-            <h4>CONTEÚDOS</h4>
-            <Link href={"/blog"}>blog</Link>
-            <Link href={""}>tutoriais</Link>
-            <Link href={""}>conteúdo exclusivo</Link>
+            <h4>{conteudos?.titulo}</h4>
+            <Link href={conteudos?.link1}>{conteudos?.linklabel1}</Link>
+            <Link href={conteudos?.link2}>{conteudos?.linklabel2}</Link>
+            <Link href={conteudos?.link3}>{conteudos?.linklabel3}</Link>
         </div>
         <div className={Styles.logo}>
             <div id={Styles.logo}>

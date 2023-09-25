@@ -117,6 +117,92 @@ export interface BlogDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link5: prismic.KeyTextField;
+
+  /**
+   * Ingles? field in *Blog → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: blog.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
+}
+
+/**
+ * Item in *Blog → Rodapé*
+ */
+export interface BlogDocumentDataRodapeItem {
+  /**
+   * Titulo field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *Blog → Rodapé*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
 }
 
 type BlogDocumentDataSlicesSlice = EmAltaSlice | GrupoBlogSlice;
@@ -135,6 +221,17 @@ interface BlogDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   header: prismic.GroupField<Simplify<BlogDocumentDataHeaderItem>>;
+
+  /**
+   * Rodapé field in *Blog*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blog.rodape[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodape: prismic.GroupField<Simplify<BlogDocumentDataRodapeItem>>;
 
   /**
    * Slice Zone field in *Blog*
@@ -497,6 +594,17 @@ export interface LandingPageDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link4: prismic.KeyTextField;
+
+  /**
+   * Ingles? field in *Landing Page → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: landing_page.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
 }
 
 /**
@@ -564,6 +672,176 @@ export interface LandingPageDocumentDataBannerItem {
   linkbotao: prismic.KeyTextField;
 }
 
+/**
+ * Item in *Landing Page → Rodape Menu*
+ */
+export interface LandingPageDocumentDataRodapemenuItem {
+  /**
+   * Titulo field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *Landing Page → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Landing Page → Rodape Conteudos*
+ */
+export interface LandingPageDocumentDataRodapeconteudosItem {
+  /**
+   * Titulo field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *Landing Page → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+}
+
 type LandingPageDocumentDataSlicesSlice =
   | CorpoSlice
   | FormularioSlice
@@ -616,6 +894,32 @@ interface LandingPageDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   banner: prismic.GroupField<Simplify<LandingPageDocumentDataBannerItem>>;
+
+  /**
+   * Rodape Menu field in *Landing Page*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapemenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapemenu: prismic.GroupField<
+    Simplify<LandingPageDocumentDataRodapemenuItem>
+  >;
+
+  /**
+   * Rodape Conteudos field in *Landing Page*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.rodapeconteudos[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapeconteudos: prismic.GroupField<
+    Simplify<LandingPageDocumentDataRodapeconteudosItem>
+  >;
 
   /**
    * Slice Zone field in *Landing Page*
@@ -1254,6 +1558,17 @@ export interface FormularioSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#color
    */
   cor: prismic.ColorField;
+
+  /**
+   * Ingles? field in *Formulario → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: formulario.primary.ingles
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  ingles: prismic.BooleanField;
 }
 
 /**
@@ -1399,6 +1714,17 @@ export interface NewstellerSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#color
    */
   cor: prismic.ColorField;
+
+  /**
+   * Ingles? field in *Newsteller → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: newsteller.primary.ingles
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  ingles: prismic.BooleanField;
 }
 
 /**
@@ -1444,6 +1770,7 @@ declare module "@prismicio/client" {
       BlogDocument,
       BlogDocumentData,
       BlogDocumentDataHeaderItem,
+      BlogDocumentDataRodapeItem,
       BlogDocumentDataSlicesSlice,
       BlogPostDocument,
       BlogPostDocumentData,
@@ -1453,6 +1780,8 @@ declare module "@prismicio/client" {
       LandingPageDocumentData,
       LandingPageDocumentDataHeaderItem,
       LandingPageDocumentDataBannerItem,
+      LandingPageDocumentDataRodapemenuItem,
+      LandingPageDocumentDataRodapeconteudosItem,
       LandingPageDocumentDataSlicesSlice,
       AllDocumentTypes,
       BlogConteudoSlice,
