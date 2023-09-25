@@ -8,9 +8,6 @@ export default function App({ Component, pageProps }) {
 		<>
 			<Component {...pageProps}/>
 			<PrismicPreview repositoryName={repositoryName} />
-			<Head>
-				<title>IndHUGE</title>
-			</Head>
 		</>
 	)
 }
