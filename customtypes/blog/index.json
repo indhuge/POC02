@@ -94,6 +94,72 @@
                 "label": "Link 5",
                 "placeholder": ""
               }
+            },
+            "idioma": {
+              "type": "Boolean",
+              "config": {
+                "label": "Ingles?",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
+            }
+          }
+        }
+      },
+      "rodape": {
+        "type": "Group",
+        "config": {
+          "label": "Rodapé",
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Titulo",
+                "placeholder": ""
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
+                "placeholder": ""
+              }
             }
           }
         }

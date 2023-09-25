@@ -2,15 +2,15 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Head from 'next/head'
 import Styles from "./style.module.scss"
-import Header from "../components/headerLanding"
-import Banner from "../components/banner"
+import Header from "../../components/headerLanding"
+import Banner from "../../components/banner"
 import { Inter } from 'next/font/google'
-import Rodape from '../components/rodapeLanding'
+import Rodape from '../../components/rodapeLanding'
 import { useEffect } from "react";
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
-import Popup from '../components/Popup'
+import Popup from '../../components/Popup'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -65,8 +65,8 @@ export default function Home({ page }) {
 					className={Styles.header}
 					dados={page?.data?.header[0]}
 				/>
-				<Banner dados={page?.data?.banner[0]}/>
-				<SliceZone slices={page?.data?.slices} components={components}/>
+				<Banner dados={page?.data?.banner[0]} />
+				<SliceZone slices={page?.data?.slices} components={components} />
 				<Rodape
 					menu={page?.data?.rodapemenu[0]}
 					conteudos={page?.data?.rodapeconteudos[0]}
@@ -79,8 +79,8 @@ export default function Home({ page }) {
 
 export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
-	const page = await client.getByUID("landing_page", "landing_page")
-	return{
+	const page = await client.getByUID("landing_page", "landing_page_en")
+	return {
 		props: { page },
 	};
 }

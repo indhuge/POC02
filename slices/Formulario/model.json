@@ -25,6 +25,15 @@
             "label": "Cor",
             "placeholder": ""
           }
+        },
+        "ingles": {
+          "type": "Boolean",
+          "config": {
+            "label": "Ingles?",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}

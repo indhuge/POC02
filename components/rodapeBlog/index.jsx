@@ -9,7 +9,7 @@ import Logolinkedin from "../../public/assets/iconelinkedin.png"
 import Logoyoutube from "../../public/assets/iconeyoutube.png"
 
 
-const Rodape = () => {
+const Rodape = ({dados}) => {
     return <div className={Styles.container}>
         <div className={Styles.logo}>
             <div id={Styles.logo}>
@@ -22,10 +22,10 @@ const Rodape = () => {
             <label>email@indhuge.com</label>
         </div>
         <div className={Styles.menu}>
-            <h3>Categorias</h3>
-            <Link href="./blog#gestao">Gestão</Link>
-            <Link href="./blog#manutencao">Manutenção</Link>
-            <Link href="./blog#industria40">Industria 4.0</Link>
+            <h3>{dados?.titulo}</h3>
+            <Link href={dados?.link1}>{dados?.linklabel1}</Link>
+            <Link href={dados?.link2}>{dados?.linklabel2}</Link>
+            <Link href={dados?.link3}>{dados?.linklabel3}</Link>
         </div> 
     </div>
 }
