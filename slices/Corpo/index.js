@@ -48,7 +48,7 @@ const Corpo = ({ slice }) => {
 								<>
 									<div className={Styles.gs}>
 										<h3>{i.numero}</h3>
-										<a>{i.frase}</a>							
+										<label>{i.frase}</label>							
 									</div>
 								</>
 							)}
