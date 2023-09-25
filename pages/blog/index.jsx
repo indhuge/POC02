@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Styles from "./style.module.scss"
 import Header from "../../components/headerBlog"
 import Rodape from '../../components/rodapeBlog'
+import { isFilled } from "@prismicio/client";
 import { Inter } from 'next/font/google'
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
@@ -11,23 +12,15 @@ import { components } from "@/slices";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export async function generateMetadata({ params }) {
-	const client = createClient();
-	const page = await client
-		.getByUID("blog", "blog")
-		.catch(() => notFound());
-
-	return {
-		title: page?.data?.meta_title,
-		description: page?.data?.meta_description,
-	};
-}
-
 export default function Home({ page }) {
     console.log(page?.data);
     return (
         <>
             <Head>
+                <title>{page?.data?.meta_title}</title>
+                {isFilled.keyText(page?.data?.meta_description) ? (
+                    <meta name="description" content={page?.data?.meta_description} />
+                ) : null}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
@@ -51,7 +44,7 @@ export default function Home({ page }) {
                     dados={page?.data?.header[0]}
                 />
                 <SliceZone slices={page?.data?.slices} components={components} />
-                <Rodape dados={page?.data?.rodape[0]}/>
+                <Rodape dados={page?.data?.rodape[0]} />
             </div>
             <script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
         </>
@@ -60,9 +53,9 @@ export default function Home({ page }) {
 }
 
 export async function getServerSideProps({ params, previewData }) {
-	const client = createClient({ previewData });
-	const page = await client.getByUID("blog", "blog")
-	return{
-		props: { page },
-	};
+    const client = createClient({ previewData });
+    const page = await client.getByUID("blog", "blog")
+    return {
+        props: { page },
+    };
 }

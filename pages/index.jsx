@@ -5,6 +5,7 @@ import Styles from "./style.module.scss"
 import Header from "../components/headerLanding"
 import Banner from "../components/banner"
 import { Inter } from 'next/font/google'
+import { isFilled } from "@prismicio/client";
 import Rodape from '../components/rodapeLanding'
 import { useEffect } from "react";
 import { createClient } from "@/prismicio";
@@ -14,20 +15,6 @@ import Popup from '../components/Popup'
 
 
 const inter = Inter({ subsets: ['latin'] })
-
-
-export async function generateMetadata({ params }) {
-	const client = createClient();
-	const page = await client
-		.getByUID("landing_page", "landing_page")
-		.catch(() => notFound());
-
-	return {
-		title: page?.data?.meta_title,
-		description: page?.data?.meta_description,
-	};
-}
-
 
 export default function Home({ page }) {
 	/*conexão com o servidor do chatbot*/
@@ -49,6 +36,10 @@ export default function Home({ page }) {
 	return (
 		<>
 			<Head>
+				<title>{page?.data?.meta_title}</title>
+				{isFilled.keyText(page?.data?.meta_description) ? (
+					<meta name="description" content={page?.data?.meta_description} />
+				) : null}
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 
