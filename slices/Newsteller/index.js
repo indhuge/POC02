@@ -53,12 +53,12 @@ const Newsteller = ({ slice }) => {
 					<input
 						type="email"
 						name="email"
-						placeholder=" Insira seu email"
+						placeholder={slice.primary.ingles? " Insert your email" : " Insira seu email"}
 						value={state.email}
 						onChange={onEmailChaged}
 						required
 					/>
-					<input type="submit" value="Enviar" />
+					<input type="submit" value={slice.primary.ingles? " SUBMIT" : "Enviar"} />
 				</form>
 			</div>
 		</section>

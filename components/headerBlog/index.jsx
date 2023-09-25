@@ -27,7 +27,8 @@ const Header = ({
             <Link href={dados?.link4 ?? ''}>{dados?.linklabel4}</Link>
             <Link href={dados?.link5 ?? ''}>{dados?.linklabel5}</Link>
         </div>
-        <div className={Styles.botao}>
+        <div className={Styles.idioma}>
+            <Link href={dados?.idioma? "../blog" : "./en/blog"}>{dados?.idioma? "EN-US" : "PT-BR"}</Link>
         </div>
     </div>
 };

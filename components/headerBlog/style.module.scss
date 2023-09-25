@@ -52,28 +52,9 @@
         }
     }
 
-    .botao {
-        width: 100%;
-        a{
-            margin-left: 50%;
-            button{
-                font-size: 1vw;
-                background-color: #003F63;
-                color: white;
-                padding: 5%;
-                border-radius: 10vw;
-                border-width: 0;
-            }
-
-            :hover{
-                font-weight: bold;
-            }
-
-            :active{
-                background-color: #F2B138;
-            }
-        }
-
-
+    .idioma{
+        width: 50%;
+        height: 20%;
+        justify-self: end;
     }
 }
