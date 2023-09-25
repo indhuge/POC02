@@ -16,6 +16,18 @@ import Popup from '../components/Popup'
 const inter = Inter({ subsets: ['latin'] })
 
 
+export async function generateMetadata({ params }) {
+	const client = createClient();
+	const page = await client
+		.getByUID("landing_page", "landing_page")
+		.catch(() => notFound());
+
+	return {
+		title: page?.data?.meta_title,
+		description: page?.data?.meta_description,
+	};
+}
+
 
 export default function Home({ page }) {
 	/*conexão com o servidor do chatbot*/
@@ -63,8 +75,8 @@ export default function Home({ page }) {
 					className={Styles.header}
 					dados={page?.data?.header[0]}
 				/>
-				<Banner dados={page?.data?.banner[0]}/>
-				<SliceZone slices={page?.data?.slices} components={components}/>
+				<Banner dados={page?.data?.banner[0]} />
+				<SliceZone slices={page?.data?.slices} components={components} />
 				<Rodape
 					menu={page?.data?.rodapemenu[0]}
 					conteudos={page?.data?.rodapeconteudos[0]}
@@ -78,7 +90,7 @@ export default function Home({ page }) {
 export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
 	const page = await client.getByUID("landing_page", "landing_page")
-	return{
+	return {
 		props: { page },
 	};
 }

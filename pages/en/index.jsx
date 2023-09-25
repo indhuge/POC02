@@ -15,7 +15,17 @@ import Popup from '../../components/Popup'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export async function generateMetadata({ params }) {
+	const client = createClient();
+	const page = await client
+		.getByUID("landing_page", "landing_page_en")
+		.catch(() => notFound());
 
+	return {
+		title: page?.data?.meta_title,
+		description: page?.data?.meta_description,
+	};
+}
 
 export default function Home({ page }) {
 	/*conexão com o servidor do chatbot*/

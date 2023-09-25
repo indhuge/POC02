@@ -11,6 +11,18 @@ import { components } from "@/slices";
 
 const inter = Inter({ subsets: ['latin'] })
 
+export async function generateMetadata({ params }) {
+	const client = createClient();
+	const page = await client
+		.getByUID("blog", "blog")
+		.catch(() => notFound());
+
+	return {
+		title: page?.data?.meta_title,
+		description: page?.data?.meta_description,
+	};
+}
+
 export default function Home({ page }) {
     console.log(page?.data);
     return (

@@ -9,7 +9,17 @@ import Header from "@/components/headerBlog";
 import Rodape from "@/components/rodapeBlogPost";
 import { useEffect, useState } from "react";
 
+export async function generateMetadata({ params }) {
+	const client = createClient();
+	const page = await client
+		.getByUID("blog_post", params?.id)
+		.catch(() => notFound());
 
+	return {
+		title: page?.data?.meta_title,
+		description: page?.data?.meta_description,
+	};
+}
 
 export default function Page({ page }) {
 
