@@ -38,7 +38,8 @@ export default function Home({ page }) {
 	return (
 		<>
 			<Head>
-			{isFilled.keyText(page?.data?.meta_description) ? (
+            <title>{page?.data?.meta_title}</title>
+                {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
