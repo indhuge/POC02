@@ -12,6 +12,8 @@ import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Popup from '../components/Popup';
 import { isFilled } from "@prismicio/client";
+import { PrismicNextImage } from "@prismicio/next";
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -42,6 +44,7 @@ export default function Home({ page }) {
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
+				<meta name='image' content={<PrismicNextImage field={page?.data?.meta_image}/>}></meta>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="ROBOTS" content="INDEX, FOLLOW"></meta>
 				<link rel="icon" href="/favicon.ico" />
