@@ -1,0 +1,112 @@
+@media only screen and (max-width: 640px){
+    .container{
+        h2{
+            font-size: 3vw;
+        }
+        .imagens{
+            grid-template-columns: 1fr !important;
+
+            div{
+                margin-bottom: 5vw;
+            }
+        }
+        .botao{ 
+            margin-bottom: 5vw;
+            button{
+                width: 80% !important;
+                font-size: 5vw !important;
+            }
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 0;
+}
+
+.container div{
+    z-index: -1;
+    font-size: 1.5vw;
+    height: 10vw;
+}
+
+.container div h2{
+    margin-top: 4vw;
+    text-align: center;
+    align-self: center;
+}
+
+.item1{
+    background-color: #F2B138;
+}
+
+.item3{
+    background-color: #F2B138;
+}
+
+
+
+.item4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../public/assets/backgroundclientes.png");
+    background-position: right;
+    background-size: cover;
+    height: fit-content !important;
+    z-index: -1;
+    h2{
+        margin-bottom: 4vw;
+    }
+
+    .imagens{
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+        div{
+            height: auto;
+        }
+
+        img{
+            margin-left: 10%;
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .botao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        button{
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+            align-self: center;
+            background-color: #003F63;
+            color: white;
+            padding: 1% 12%;
+            border-radius: 10vw;
+            border-width: 0;
+            font-size: 1.5vw;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        :hover{
+            font-weight: bold !important;
+        }
+
+        :active{
+            background-color: #F2B138 !important;
+        }  
+    }
+}

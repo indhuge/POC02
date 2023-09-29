@@ -1,0 +1,65 @@
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 80% !important;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 30%;
+    justify-items: center;
+    margin: 5vh 10%;
+    font-size: 1vw;
+
+    .titulo {
+        justify-self: baseline;
+        font-size: 3vw;
+    }
+
+    .escrever {
+        width: 100%;
+        background-color: #003F63;
+        padding: 2vh;
+        border-radius: 1vh;
+        display: grid;
+        grid-template-columns: 3fr 7fr 2fr;
+
+        div {
+            label {
+                color: white;
+                margin-bottom: 1vh;
+                display: block;
+            }
+
+            input {
+                width: 90%;
+                height: 5vh;
+                border-radius: 1vh;
+                font-size: 1vw;
+            }
+        }
+
+        .botaoEnviar {
+            display: grid;
+            align-items: end;
+        }
+    }
+
+    .containerCard {
+        width: 100%;
+        padding: 3vh 2vh;
+        margin: 1vh 0vh;
+        border-radius: 1vh;
+        background-color: white;
+
+        h4 {
+            margin: 0% 5%;
+        }
+
+        p {
+            margin: 0% 5%;
+            color: gray
+        }
+    }
+}

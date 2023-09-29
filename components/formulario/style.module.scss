@@ -1,0 +1,82 @@
+@media only screen and (max-width: 640px){
+    .container{
+        font-size: 3vw !important;
+
+        input{
+            width: 80% !important;
+            height: 7vw !important;
+            font-size: 3vw !important;
+            margin-top: 2vw !important;
+            border-radius: 2vw !important;
+        }
+        .mensagem{
+            width: 80% !important;
+            height: 15vw !important;
+            font-size: 3vw !important;
+            margin-top: 2vw !important;
+            border-radius: 3vw !important;
+        }
+        input:last-of-type{
+            font-size: 5vw !important;
+            height: 8vw !important;
+            margin-bottom: 5vw !important;
+        }
+
+    }
+}
+
+.container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: #F2B138;
+    z-index: 0;
+    font-size: 1.5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.container h2{
+    margin-top: 2vw;
+}
+
+.container input{
+    width: 52%;
+    margin-top: 1vw;
+    height: 3vw;
+    border-radius: 1vw;
+    background-color: #DEDEDE;
+    border-color: #DEDEDE;
+    font-size: 1vw;
+}
+
+.mensagem{
+    padding-top: 1vw !important;
+    margin-top: 1%;
+    resize: none;
+    width: 51%;
+    padding-left: 1vw;
+    background-color:  #DEDEDE;
+    border-color: #DEDEDE;
+    border-radius: 2vw;
+    height: 10vw;
+}
+
+.container input:last-of-type{
+    margin-bottom: 2vw;
+    width: 30%;
+    margin: 2vw 10%;
+    background-color: #003F63;
+    color: white;
+    font-size: 2vw;
+    border-radius: 10vw;
+}
+
+.container input:last-of-type:hover{
+    font-weight: bold !important;
+}
+
+.container input:last-of-type:active{
+    background-color: #DEDEDE !important;
+}
