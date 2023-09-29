@@ -1,5 +1,4 @@
 const comentario = require("../sequelize/models/comentario");
-const usuario = require("../sequelize/models/usuario");
 
 async function getComentarios(n) {
     let lista = []
