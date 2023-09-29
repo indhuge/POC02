@@ -9,7 +9,6 @@ import { Inter } from 'next/font/google'
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
-import { isFilled } from "@prismicio/client";
 
 const inter = Inter({ subsets: ['latin'] })
 
