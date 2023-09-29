@@ -9,8 +9,6 @@ import Header from "@/components/headerBlog";
 import Rodape from "@/components/rodapeBlogPost";
 import { useEffect, useState } from "react";
 
-
-
 export default function Page({ page }) {
 
     const [data, setData] = useState([])
@@ -46,6 +44,7 @@ export default function Page({ page }) {
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
+                <meta property="og:image" content={page?.data?.meta_image} />
             </Head>
             <>
                 <Header

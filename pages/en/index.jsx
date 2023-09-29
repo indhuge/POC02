@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Styles from "./style.module.scss"
 import Header from "../../components/headerLanding"
 import Banner from "../../components/banner"
+import { isFilled } from "@prismicio/client";
 import { Inter } from 'next/font/google'
 import Rodape from '../../components/rodapeLanding'
 import { useEffect } from "react";
@@ -11,12 +12,9 @@ import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Popup from '../../components/Popup';
-import { isFilled } from "@prismicio/client";
 
 
 const inter = Inter({ subsets: ['latin'] })
-
-
 
 export default function Home({ page }) {
 	/*conexão com o servidor do chatbot*/

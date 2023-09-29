@@ -5,11 +5,11 @@ import { SliceZone } from "@prismicio/react";
 import Styles from "./style.module.scss";
 import { components } from "@/slices";
 import { createClient } from "@/prismicio";
-import Header from "@/components/headerBlog";
+import Header from "@/components/headerBlogPost";
+import Comentario from "@/components/comentario";
 import Rodape from "@/components/rodapeBlogPost";
 import { useEffect, useState } from "react";
-
-
+//import Gerador from "../api/geradorComentarios";
 
 export default function Page({ page }) {
 
@@ -19,23 +19,24 @@ export default function Page({ page }) {
     const [header, setHeader] = useState([])
     const [auth, setAuth] = useState([])
 
-    useEffect(() =>{
+
+    useEffect(() => {
         setData(data);
     }, [])
 
-    useEffect(() =>{
+    useEffect(() => {
         setLogo(logo);
     }, [])
 
-    useEffect(() =>{
+    useEffect(() => {
         setDados(dados);
     }, [])
 
-    useEffect(() =>{
+    useEffect(() => {
         setHeader(header);
     }, [])
 
-    useEffect(() =>{
+    useEffect(() => {
         setAuth(auth);
     }, [])
 
@@ -46,6 +47,7 @@ export default function Page({ page }) {
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
+                <meta property="og:image" content={page?.data?.meta_image} />
             </Head>
             <>
                 <Header
@@ -53,6 +55,7 @@ export default function Page({ page }) {
                     dados={page?.data?.header[0]}
                 />
                 <SliceZone slices={page?.data?.slices} components={components} />
+                <Comentario idPost={page?.uid}/>
                 <Rodape />
             </>
         </>
