@@ -5,20 +5,18 @@ import Styles from "./style.module.scss"
 import Header from "../components/headerLanding"
 import Banner from "../components/banner"
 import { Inter } from 'next/font/google'
-import { isFilled } from "@prismicio/client";
 import Rodape from '../components/rodapeLanding'
 import { useEffect } from "react";
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Popup from '../components/Popup';
-import { PrismicNextImage } from "@prismicio/next";
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ page }) {
+export default function Home({ page, metadata }) {
 	/*conexão com o servidor do chatbot*/
 	useEffect(() => {
 		async function carregaBot() {
@@ -38,11 +36,13 @@ export default function Home({ page }) {
 	return (
 		<>
 			<Head>
-			<title>{page?.data?.meta_title}</title>
-                {isFilled.keyText(page?.data?.meta_description) ? (
-                    <meta name="description" content={page?.data?.meta_description} />
-                ) : null}
-				<meta name='image' content={<PrismicNextImage field={page?.data?.meta_image}/>}></meta>
+				<title>{metadata?.meta_title}</title>
+				<link
+					rel="canonical"
+					href={`http://localhost:3000${metadata?.meta_url}`}
+				/>
+				<meta name="description" content={metadata?.meta_description} />
+				<meta property="og:image" content={metadata?.meta_image.url} />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="ROBOTS" content="INDEX, FOLLOW"></meta>
 				<link rel="icon" href="/favicon.ico" />
@@ -84,8 +84,16 @@ export default function Home({ page }) {
 
 export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
-	const page = await client.getByUID("landing_page", "landing_page")
+	const page = await client.getByUID("landing_page", "landing_page");
+
+	const metadata = {
+		meta_description: page.data.meta_description,
+		meta_image: page.data.meta_image,
+		meta_title: page.data.meta_title,
+		meta_url: page.url,
+	};
+
 	return {
-		props: { page },
+		props: { page, metadata },
 	};
 }

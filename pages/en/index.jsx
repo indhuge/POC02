@@ -16,7 +16,7 @@ import Popup from '../../components/Popup';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ page }) {
+export default function Home({ page, metadata }) {
 	/*conexão com o servidor do chatbot*/
 	useEffect(() => {
 		async function carregaBot() {
@@ -36,10 +36,13 @@ export default function Home({ page }) {
 	return (
 		<>
 			<Head>
-            <title>{page?.data?.meta_title}</title>
-                {isFilled.keyText(page?.data?.meta_description) ? (
-                    <meta name="description" content={page?.data?.meta_description} />
-                ) : null}
+				<title>{metadata?.meta_title}</title>
+				<link
+					rel="canonical"
+					href={`http://localhost:3000${metadata?.meta_url}`}
+				/>
+				<meta name="description" content={metadata?.meta_description} />
+				<meta property="og:image" content={metadata?.meta_image.url} />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 
@@ -80,8 +83,16 @@ export default function Home({ page }) {
 
 export async function getServerSideProps({ params, previewData }) {
 	const client = createClient({ previewData });
-	const page = await client.getByUID("landing_page", "landing_page_en")
+	const page = await client.getByUID("landing_page", "landing_page_en");
+
+	const metadata = {
+		meta_description: page.data.meta_description,
+		meta_image: page.data.meta_image,
+		meta_title: page.data.meta_title,
+		meta_url: page.url,
+	};
+
 	return {
-		props: { page },
+		props: { page, metadata },
 	};
 }
