@@ -1,13 +1,20 @@
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 80% !important;
+    }
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 30%;
     justify-items: center;
     margin: 5vh 10%;
-    font-size: 3vw;
+    font-size: 1vw;
 
     .titulo {
-        font-size: 8vw;
+        justify-self: baseline;
+        font-size: 3vw;
     }
 
     .escrever {
@@ -16,7 +23,7 @@
         padding: 2vh;
         border-radius: 1vh;
         display: grid;
-        grid-template-columns: 2fr 6fr 1fr;
+        grid-template-columns: 3fr 7fr 2fr;
 
         div {
             label {
@@ -29,7 +36,7 @@
                 width: 90%;
                 height: 5vh;
                 border-radius: 1vh;
-                font-size: 2vw;
+                font-size: 1vw;
             }
         }
 
@@ -46,11 +53,11 @@
         border-radius: 1vh;
         background-color: white;
 
-        h4{
+        h4 {
             margin: 0% 5%;
         }
 
-        p{
+        p {
             margin: 0% 5%;
             color: gray
         }
