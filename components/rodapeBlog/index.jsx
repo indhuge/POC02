@@ -22,7 +22,7 @@ const Rodape = ({dados}) => {
             <label>email@indhuge.com</label>
         </div>
         <div className={Styles.menu}>
-            <h3>{dados?.titulo}</h3>
+            <h5>{dados?.titulo}</h5>
             <Link href={dados?.link1}>{dados?.linklabel1}</Link>
             <Link href={dados?.link2}>{dados?.linklabel2}</Link>
             <Link href={dados?.link3}>{dados?.linklabel3}</Link>

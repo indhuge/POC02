@@ -20,14 +20,14 @@ const Rodape = ({
             <label>email@indhuge.com</label>
         </div>
         <div className={Styles.menu}>
-            <h4>{menu?.titulo}</h4>
+            <h5>{menu?.titulo}</h5>
             <Link href={menu?.link1}>{menu?.linklabel1}</Link>
             <Link href={menu?.link2}>{menu?.linklabel2}</Link>
             <Link href={menu?.link3}>{menu?.linklabel3}</Link>
             <Link href={menu?.link4}>{menu?.linklabel4}</Link>
         </div>
         <div className={Styles.conteudos}>
-            <h4>{conteudos?.titulo}</h4>
+            <h5>{conteudos?.titulo}</h5>
             <Link href={conteudos?.link1}>{conteudos?.linklabel1}</Link>
             <Link href={conteudos?.link2}>{conteudos?.linklabel2}</Link>
             <Link href={conteudos?.link3}>{conteudos?.linklabel3}</Link>

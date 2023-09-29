@@ -9,6 +9,8 @@ import { Inter } from 'next/font/google'
 import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
+import { isFilled } from "@prismicio/client";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +19,10 @@ export default function Home({ page }) {
     return (
         <>
             <Head>
-                <title>{page?.data?.meta_title}</title>
+            <title>{page?.data?.meta_title}</title>
                 {isFilled.keyText(page?.data?.meta_description) ? (
                     <meta name="description" content={page?.data?.meta_description} />
                 ) : null}
-                <meta property="og:image" content={page?.data?.meta_image} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
