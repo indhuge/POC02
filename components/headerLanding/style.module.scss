@@ -1,24 +1,29 @@
-@media only screen and (max-width: 640px){
-    .container{
-        div{
+@media only screen and (max-width: 640px) {
+    .container {
+            grid-template-columns: 2fr 2fr 1fr 1fr !important;
+
+        div {
             margin: 0vw !important;
-            img{
-                margin: 0vw 10%  !important;
+
+            img {
+                margin: 0vw 10% !important;
             }
         }
-        a{
-            font-size: 3.8vw !important;
+
+        a {
+            //font-size: 3.8vw !important;
             margin: 0vw 1vw !important;
             text-align: center !important;
         }
-        button{
-            font-size: 3vw !important;
-            margin: 0vw 10%  !important;
+
+        button {
+            //font-size: 3vw !important;
+            margin: 0vw 10% !important;
         }
     }
 }
 
-.container{
+.container {
     width: 100%;
     padding: 1vw 0vw;
     position: fixed !important;
@@ -30,46 +35,53 @@
     z-index: 3 !important;
     height: auto;
 
-    .logo{
+    .logo {
         width: 100%;
         margin-left: 10%;
-        img{
+
+        img {
             height: 4vw;
             width: auto;
         }
     }
 
-    .menu{
+    .menu {
         font-size: 1.5vw;
-        a{
+
+        a {
             margin-left: 10%;
             margin-right: 6%;
             text-decoration: none;
             color: black;
         }
-        a :hover{
+
+        a :hover {
             color: #F2B138;
         }
     }
 
     .botao {
         width: 100%;
-        a{
+
+        a {
             margin-left: 20%;
-            button{
+
+            button {
+                width: 100%;
                 font-size: 1vw;
                 background-color: #003F63;
                 color: white;
+                font-size: 1vw;
                 padding: 5%;
                 border-radius: 10vw;
                 border-width: 0;
             }
 
-            :hover{
+            :hover {
                 font-weight: bold;
             }
 
-            :active{
+            :active {
                 background-color: #F2B138;
             }
         }
@@ -77,9 +89,15 @@
 
     }
 
-    .idioma{
+    .idioma {
         width: 50%;
         height: 20%;
         justify-self: end;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 1vw;
+        }
     }
 }

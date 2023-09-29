@@ -5,7 +5,7 @@ import { SliceZone } from "@prismicio/react";
 import Styles from "./style.module.scss";
 import { components } from "@/slices";
 import { createClient } from "@/prismicio";
-import Header from "@/components/headerBlog";
+import Header from "@/components/headerBlogPost";
 import Comentario from "@/components/comentario";
 import Rodape from "@/components/rodapeBlogPost";
 import { useEffect, useState } from "react";
