@@ -11,7 +11,7 @@ import Rodape from "@/components/rodapeBlogPost";
 import { useEffect, useState } from "react";
 //import Gerador from "../api/geradorComentarios";
 
-export default function Page({ page }) {
+export default function Page({ page, metadata }) {
 
     const [data, setData] = useState([])
     const [logo, setLogo] = useState([])
@@ -43,11 +43,13 @@ export default function Page({ page }) {
     return (
         <>
             <Head>
-                <title>{page?.data?.meta_title}</title>
-                {isFilled.keyText(page?.data?.meta_description) ? (
-                    <meta name="description" content={page?.data?.meta_description} />
-                ) : null}
-                <meta property="og:image" content={page?.data?.meta_image} />
+                <title>{metadata?.meta_title}</title>
+                <link
+                    rel="canonical"
+                    href={`http://localhost:3000${metadata?.meta_url}`}
+                />
+                <meta name="description" content={metadata?.meta_description} />
+                <meta property="og:image" content={metadata?.meta_image.url} />
             </Head>
             <>
                 <Header
@@ -55,7 +57,7 @@ export default function Page({ page }) {
                     dados={page?.data?.header[0]}
                 />
                 <SliceZone slices={page?.data?.slices} components={components} />
-                <Comentario idPost={page?.uid}/>
+                <Comentario idPost={page?.uid} />
                 <Rodape />
             </>
         </>
@@ -67,8 +69,16 @@ export default function Page({ page }) {
 export async function getServerSideProps({ params }) {
     const client = createClient();
     const page = await client.getByUID("blog_post", params?.id);
+    
+    const metadata = {
+        meta_description: page.data.meta_description,
+        meta_image: page.data.meta_image,
+        meta_title: page.data.meta_title,
+        meta_url: page.url,
+    };
+
     return {
-        props: { page },
+        props: { page, metadata },
     };
 }
 
