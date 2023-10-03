@@ -69,15 +69,19 @@ const Corpo = ({ slice }) => {
 							{slice.variation === "depoimentos" && (
 								<>
 								<div className={Styles.depoimentos}>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
-								
-								
-					
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
+									</div>
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
+
+									</div>
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
+									</div>
 								</div>
 								</>
 							)}
