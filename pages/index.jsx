@@ -71,13 +71,16 @@ export default function Home({ page, metadata }) {
 					dados={page?.data?.header[0]}
 				/>
 				<Banner dados={page?.data?.banner[0]} />
-				<SliceZone slices={page?.data?.slices} components={components} />
+				<SliceZone slices={page?.data?.slices} components={components}/>
 				<Rodape
 					menu={page?.data?.rodapemenu[0]}
 					conteudos={page?.data?.rodapeconteudos[0]}
 				/>
 			</div>
 			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
+
+			<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>
+			<script async src="https://assets.calendly.com/assets/external/widget.js"/>
 		</>
 	);
 }
