@@ -481,6 +481,68 @@ export type BlogPostDocument<Lang extends string = string> =
     Lang
   >;
 
+type IndexDocumentDataSlicesSlice = never;
+
+/**
+ * Content for index documents
+ */
+interface IndexDocumentData {
+  /**
+   * Slice Zone field in *index*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<IndexDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *index*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: index.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *index*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: index.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *index*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: index.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * index document from Prismic
+ *
+ * - **API ID**: `index`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type IndexDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<Simplify<IndexDocumentData>, "index", Lang>;
+
 /**
  * Item in *Landing Page → Header*
  */
@@ -981,10 +1043,156 @@ export type LandingPageDocument<Lang extends string = string> =
     Lang
   >;
 
+type TesteDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Teste documents
+ */
+interface TesteDocumentData {
+  /**
+   * Slice Zone field in *Teste*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: teste.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<TesteDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Teste*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: teste.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Teste*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: teste.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Teste*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: teste.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Teste document from Prismic
+ *
+ * - **API ID**: `teste`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type TesteDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<Simplify<TesteDocumentData>, "teste", Lang>;
+
 export type AllDocumentTypes =
   | BlogDocument
   | BlogPostDocument
-  | LandingPageDocument;
+  | IndexDocument
+  | LandingPageDocument
+  | TesteDocument;
+
+/**
+ * Primary content in *Banner → Primary*
+ */
+export interface BannerSliceDefaultPrimary {
+  /**
+   * Fundo field in *Banner → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: banner.primary.fundo
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  fundo: prismic.ColorField;
+
+  /**
+   * ImagemEsquerda field in *Banner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: banner.primary.imagemesquerda
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imagemesquerda: prismic.ImageField<never>;
+
+  /**
+   * ImagemDireita field in *Banner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: banner.primary.imagemdireita
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imagemdireita: prismic.ImageField<never>;
+
+  /**
+   * ImagemBaixo field in *Banner → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: banner.primary.imagembaixo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imagembaixo: prismic.ImageField<never>;
+
+  /**
+   * Botao field in *Banner → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: banner.primary.botao
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  botao: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Banner Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BannerSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<BannerSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Banner*
+ */
+type BannerSliceVariation = BannerSliceDefault;
+
+/**
+ * Banner Shared Slice
+ *
+ * - **API ID**: `banner`
+ * - **Description**: Banner
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type BannerSlice = prismic.SharedSlice<"banner", BannerSliceVariation>;
 
 /**
  * Primary content in *BlogConteudo → Primary*
@@ -1439,6 +1647,34 @@ export type CorpoSliceGatilhossociais = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceAgendaItem {
+  /**
+   * linkAgenda field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].linkagenda
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linkagenda: prismic.KeyTextField;
+}
+
+/**
+ * agenda variation for Corpo Slice
+ *
+ * - **API ID**: `agenda`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceAgenda = prismic.SharedSliceVariation<
+  "agenda",
+  Record<string, never>,
+  Simplify<CorpoSliceAgendaItem>
+>;
+
+/**
  * Slice variation for *Corpo*
  */
 type CorpoSliceVariation =
@@ -1447,7 +1683,8 @@ type CorpoSliceVariation =
   | CorpoSliceIFrame
   | CorpoSliceLogos
   | CorpoSliceDepoimentos
-  | CorpoSliceGatilhossociais;
+  | CorpoSliceGatilhossociais
+  | CorpoSliceAgenda;
 
 /**
  * Corpo Shared Slice
@@ -1776,6 +2013,9 @@ declare module "@prismicio/client" {
       BlogPostDocumentData,
       BlogPostDocumentDataHeaderItem,
       BlogPostDocumentDataSlicesSlice,
+      IndexDocument,
+      IndexDocumentData,
+      IndexDocumentDataSlicesSlice,
       LandingPageDocument,
       LandingPageDocumentData,
       LandingPageDocumentDataHeaderItem,
@@ -1783,7 +2023,14 @@ declare module "@prismicio/client" {
       LandingPageDocumentDataRodapemenuItem,
       LandingPageDocumentDataRodapeconteudosItem,
       LandingPageDocumentDataSlicesSlice,
+      TesteDocument,
+      TesteDocumentData,
+      TesteDocumentDataSlicesSlice,
       AllDocumentTypes,
+      BannerSlice,
+      BannerSliceDefaultPrimary,
+      BannerSliceVariation,
+      BannerSliceDefault,
       BlogConteudoSlice,
       BlogConteudoSliceDefaultPrimary,
       BlogConteudoSliceImagemPrimary,
@@ -1799,6 +2046,7 @@ declare module "@prismicio/client" {
       CorpoSliceLogosItem,
       CorpoSliceDepoimentosItem,
       CorpoSliceGatilhossociaisItem,
+      CorpoSliceAgendaItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
@@ -1806,6 +2054,7 @@ declare module "@prismicio/client" {
       CorpoSliceLogos,
       CorpoSliceDepoimentos,
       CorpoSliceGatilhossociais,
+      CorpoSliceAgenda,
       EmAltaSlice,
       EmAltaSliceDefaultPrimary,
       EmAltaSliceDefaultItem,

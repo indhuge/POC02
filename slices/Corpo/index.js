@@ -2,12 +2,16 @@
  * @typedef {import("@prismicio/client").Content.CorpoSlice} CorpoSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<CorpoSlice>} CorpoProps
  * @param {CorpoProps}
+ * 
  */
 
 import Styles from "./style.module.scss"
 import { PrismicNextImage } from "@prismicio/next";
 import Link from "next/link";
 import { PrismicRichText } from "@prismicio/react";
+import React from 'react';
+import { PopupWidget } from 'react-calendly';
+
 
 const Corpo = ({ slice }) => {
 	let t = 0;
@@ -69,15 +73,33 @@ const Corpo = ({ slice }) => {
 							{slice.variation === "depoimentos" && (
 								<>
 								<div className={Styles.depoimentos}>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
-								<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
-								<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_1} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_1} /></div>
+									</div>
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_2} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_2} /></div>
+
+									</div>
+									<div className={Styles.ItemDepoimento}>
+										<div className={Styles.textoDepoimentos}><PrismicRichText field={i.depoimento_3} /></div>
+										<div className={Styles.nomesDepoimentos}><PrismicRichText field={i.nome_3} /></div>
+									</div>
+								</div>
+								</>
+							)}
+							{slice.variation === "agenda" && (
+								<>
+								<div className={Styles.agenda}>
+								<button 
+								className={Styles.botaoAgendar}
+								onClick={() => Calendly.initPopupWidget({
+           					 	url: 'https://calendly.com/indhuge/reuniao-de-apresentacao',
+          						})}>
+									<a>{i.linkagenda}</a>	
+								</button>
 								
-								
-					
 								</div>
 								</>
 							)}

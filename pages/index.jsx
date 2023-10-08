@@ -79,6 +79,9 @@ export default function Home({ page, metadata }) {
 				/>
 			</div>
 			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
+
+			<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"></link>
+			<script async src="https://assets.calendly.com/assets/external/widget.js"/>
 		</>
 	);
 }
