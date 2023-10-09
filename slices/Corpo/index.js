@@ -95,7 +95,7 @@ const Corpo = ({ slice }) => {
 								<button 
 								className={Styles.botaoAgendar}
 								onClick={() => Calendly.initPopupWidget({
-           					 	url: 'https://calendly.com/indhuge/reuniao-de-apresentacao',
+           					 	url: 'https://meetings.hubspot.com/gabriela-hensel',
           						})}>
 									<a>{i.linkagenda}</a>	
 								</button>
