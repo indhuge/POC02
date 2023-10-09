@@ -11,6 +11,7 @@ import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Popup from '../components/Popup';
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 
 
@@ -70,8 +71,8 @@ export default function Home({ page, metadata }) {
 					className={Styles.header}
 					dados={page?.data?.header[0]}
 				/>
-				<Banner dados={page?.data?.banner[0]} />
-				<SliceZone slices={page?.data?.slices} components={components}/>
+				<ParallaxProvider><Banner dados={page?.data?.banner[0]} /></ParallaxProvider>
+				<SliceZone slices={page?.data?.slices} components={components} />
 				<Rodape
 					menu={page?.data?.rodapemenu[0]}
 					conteudos={page?.data?.rodapeconteudos[0]}
