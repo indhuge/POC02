@@ -50,7 +50,7 @@ const Comentario = ({ idPost }) => {
 
     useEffect(() => {
         fetchComentarios(idPost).then((n) => { setListaComentarios(n); });
-    }, []);
+    }, [idPost]);
 
     console.log(listaComentarios);
 

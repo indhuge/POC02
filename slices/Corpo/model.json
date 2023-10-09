@@ -257,6 +257,24 @@
           }
         }
       }
+    },
+    {
+      "id": "agenda",
+      "name": "agenda",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "linkagenda": {
+          "type": "Text",
+          "config": {
+            "label": "linkAgenda",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }

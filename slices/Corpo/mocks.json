@@ -462,5 +462,25 @@
 				]
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "agenda",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"linkagenda",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "iron",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('postgres://postgres.wmcplksxpqgwnwmrjjrn:testeemail2000@aws-0-sa-east-1.pooler.supabase.com:6543/postgres',
-    { dialect: 'postgres' });
+const sequelize = new Sequelize('postgresql://postgres:testeemail2000@db.wmcplksxpqgwnwmrjjrn.supabase.co:5432/postgres',
+    { dialectModule: require('pg') });
 
 module.exports = sequelize;
 
