@@ -11,8 +11,9 @@ import Link from "next/link";
 import { PrismicRichText } from "@prismicio/react";
 import React from 'react';
 import { PopupWidget } from 'react-calendly';
+import dynamic from 'next/dynamic'
 
-
+const Map = dynamic(() => import('/components/Map'), { ssr: false })
 const Corpo = ({ slice }) => {
 	let t = 0;
 	return (
@@ -100,6 +101,18 @@ const Corpo = ({ slice }) => {
 									<a>{i.linkagenda}</a>	
 								</button>
 								
+								</div>
+								</>
+							)}
+							{slice.variation === "mapa" &&(
+								<>
+								<div className={Styles.containerMapa}>
+									<div className={Styles.textoMapa}>
+									<label>{i.textomapa}</label>
+									</div>
+									<div className={Styles.mapa}>
+										<Map/>
+									</div>
 								</div>
 								</>
 							)}
