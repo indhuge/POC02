@@ -275,6 +275,24 @@
           }
         }
       }
+    },
+    {
+      "id": "mapa",
+      "name": "mapa",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "textomapa": {
+          "type": "Text",
+          "config": {
+            "label": "textomapa",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }

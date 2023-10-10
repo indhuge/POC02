@@ -1675,6 +1675,34 @@ export type CorpoSliceAgenda = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceMapaItem {
+  /**
+   * textomapa field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].textomapa
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textomapa: prismic.KeyTextField;
+}
+
+/**
+ * mapa variation for Corpo Slice
+ *
+ * - **API ID**: `mapa`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceMapa = prismic.SharedSliceVariation<
+  "mapa",
+  Record<string, never>,
+  Simplify<CorpoSliceMapaItem>
+>;
+
+/**
  * Slice variation for *Corpo*
  */
 type CorpoSliceVariation =
@@ -1684,7 +1712,8 @@ type CorpoSliceVariation =
   | CorpoSliceLogos
   | CorpoSliceDepoimentos
   | CorpoSliceGatilhossociais
-  | CorpoSliceAgenda;
+  | CorpoSliceAgenda
+  | CorpoSliceMapa;
 
 /**
  * Corpo Shared Slice
@@ -2047,6 +2076,7 @@ declare module "@prismicio/client" {
       CorpoSliceDepoimentosItem,
       CorpoSliceGatilhossociaisItem,
       CorpoSliceAgendaItem,
+      CorpoSliceMapaItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
@@ -2055,6 +2085,7 @@ declare module "@prismicio/client" {
       CorpoSliceDepoimentos,
       CorpoSliceGatilhossociais,
       CorpoSliceAgenda,
+      CorpoSliceMapa,
       EmAltaSlice,
       EmAltaSliceDefaultPrimary,
       EmAltaSliceDefaultItem,
