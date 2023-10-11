@@ -84,6 +84,10 @@ export default function Home({ page, metadata }) {
 			<script async src="https://assets.calendly.com/assets/external/widget.js"/>
 
     		<script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    		 integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     		crossorigin=""/>
 		</>
 	);
 }
