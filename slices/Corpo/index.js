@@ -98,7 +98,7 @@ const Corpo = ({ slice }) => {
 								onClick={() => Calendly.initPopupWidget({
            					 	url: 'https://meetings.hubspot.com/gabriela-hensel',
           						})}>
-									<a>{i.linkagenda}</a>	
+									<label>{i.linkagenda}</label>	
 								</button>
 								
 								</div>
