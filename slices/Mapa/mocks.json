@@ -1,0 +1,36 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"textomapa": {
+				"__TYPE__": "FieldContent",
+				"value": "burn",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"cidade",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "produce",
+							"type": "Text"
+						}
+					],
+					[
+						"estado",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "atmosphere",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

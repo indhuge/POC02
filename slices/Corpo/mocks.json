@@ -490,16 +490,7 @@
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"textomapa",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "curious",
-							"type": "Text"
-						}
-					]
-				]
+				"value": []
 			}
 		]
 	}
