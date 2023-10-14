@@ -32,7 +32,7 @@ const Map = (dados) => {
 		const carrega = async () => {
 			const res = await arraymarkers(dados);
 			setMarkers(res);
-			setTimeout(() => { setLoading(false) }, 2000)
+			setTimeout(() => { setLoading(false) }, 3000)
 		}
 		carrega();
 	}, [dados])
