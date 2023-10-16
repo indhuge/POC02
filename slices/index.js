@@ -3,10 +3,12 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  banner: dynamic(() => import("./Banner")),
   blog_conteudo: dynamic(() => import("./BlogConteudo")),
   corpo: dynamic(() => import("./Corpo")),
   em_alta: dynamic(() => import("./EmAlta")),
   formulario: dynamic(() => import("./Formulario")),
   grupo_blog: dynamic(() => import("./GrupoBlog")),
+  mapa: dynamic(() => import("./Mapa")),
   newsteller: dynamic(() => import("./Newsteller")),
 };

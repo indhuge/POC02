@@ -905,6 +905,7 @@ export interface LandingPageDocumentDataRodapeconteudosItem {
 }
 
 type LandingPageDocumentDataSlicesSlice =
+  | MapaSlice
   | CorpoSlice
   | FormularioSlice
   | NewstellerSlice;
@@ -1675,21 +1676,6 @@ export type CorpoSliceAgenda = prismic.SharedSliceVariation<
 >;
 
 /**
- * Primary content in *Corpo → Items*
- */
-export interface CorpoSliceMapaItem {
-  /**
-   * textomapa field in *Corpo → Items*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].textomapa
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  textomapa: prismic.KeyTextField;
-}
-
-/**
  * mapa variation for Corpo Slice
  *
  * - **API ID**: `mapa`
@@ -1699,7 +1685,7 @@ export interface CorpoSliceMapaItem {
 export type CorpoSliceMapa = prismic.SharedSliceVariation<
   "mapa",
   Record<string, never>,
-  Simplify<CorpoSliceMapaItem>
+  never
 >;
 
 /**
@@ -1958,6 +1944,73 @@ export type GrupoBlogSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *Mapa → Primary*
+ */
+export interface MapaSliceDefaultPrimary {
+  /**
+   * textomapa field in *Mapa → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mapa.primary.textomapa
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textomapa: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *Mapa → Items*
+ */
+export interface MapaSliceDefaultItem {
+  /**
+   * cidade field in *Mapa → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mapa.items[].cidade
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  cidade: prismic.KeyTextField;
+
+  /**
+   * estado field in *Mapa → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: mapa.items[].estado
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  estado: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Mapa Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MapaSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<MapaSliceDefaultPrimary>,
+  Simplify<MapaSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Mapa*
+ */
+type MapaSliceVariation = MapaSliceDefault;
+
+/**
+ * Mapa Shared Slice
+ *
+ * - **API ID**: `mapa`
+ * - **Description**: Mapa
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type MapaSlice = prismic.SharedSlice<"mapa", MapaSliceVariation>;
+
+/**
  * Primary content in *Newsteller → Primary*
  */
 export interface NewstellerSliceDefaultPrimary {
@@ -2076,7 +2129,6 @@ declare module "@prismicio/client" {
       CorpoSliceDepoimentosItem,
       CorpoSliceGatilhossociaisItem,
       CorpoSliceAgendaItem,
-      CorpoSliceMapaItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
@@ -2100,6 +2152,11 @@ declare module "@prismicio/client" {
       GrupoBlogSliceDefaultItem,
       GrupoBlogSliceVariation,
       GrupoBlogSliceDefault,
+      MapaSlice,
+      MapaSliceDefaultPrimary,
+      MapaSliceDefaultItem,
+      MapaSliceVariation,
+      MapaSliceDefault,
       NewstellerSlice,
       NewstellerSliceDefaultPrimary,
       NewstellerSliceVariation,
