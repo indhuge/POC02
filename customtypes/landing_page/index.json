@@ -315,6 +315,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "mapa": {
+              "type": "SharedSlice"
+            },
             "corpo": {
               "type": "SharedSlice"
             },

@@ -104,18 +104,6 @@ const Corpo = ({ slice }) => {
 								</div>
 								</>
 							)}
-							{slice.variation === "mapa" &&(
-								<>
-								<div className={Styles.containerMapa}>
-									<div className={Styles.textoMapa}>
-									<label>{i.textomapa}</label>
-									</div>
-									<div className={Styles.mapa}>
-										<Map/>
-									</div>
-								</div>
-								</>
-							)}
 						</div>
 					</div>
 				);
