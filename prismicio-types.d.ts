@@ -481,6 +481,392 @@ export type BlogPostDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Item in *faqpage → Header*
+ */
+export interface FaqpageDocumentDataHeaderItem {
+  /**
+   * logo field in *faqpage → Header*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * Link Label 1 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Botao Label field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].botaolabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  botaolabel: prismic.KeyTextField;
+
+  /**
+   * Link Botao field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linkbotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linkbotao: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+}
+
+/**
+ * Item in *faqpage → Rodape Menu*
+ */
+export interface FaqpageDocumentDataRodapemenuItem {
+  /**
+   * Titulo field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+}
+
+/**
+ * Item in *faqpage → Rodape Conteudos*
+ */
+export interface FaqpageDocumentDataRodapeconteudosItem {
+  /**
+   * Titulo field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+}
+
+type FaqpageDocumentDataSlicesSlice = FaqSlice;
+
+/**
+ * Content for faqpage documents
+ */
+interface FaqpageDocumentData {
+  /**
+   * Header field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  header: prismic.GroupField<Simplify<FaqpageDocumentDataHeaderItem>>;
+
+  /**
+   * Rodape Menu field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapemenu: prismic.GroupField<Simplify<FaqpageDocumentDataRodapemenuItem>>;
+
+  /**
+   * Rodape Conteudos field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapeconteudos: prismic.GroupField<
+    Simplify<FaqpageDocumentDataRodapeconteudosItem>
+  >;
+
+  /**
+   * Slice Zone field in *faqpage*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<FaqpageDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *faqpage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: faqpage.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *faqpage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *faqpage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: faqpage.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * faqpage document from Prismic
+ *
+ * - **API ID**: `faqpage`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FaqpageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<FaqpageDocumentData>,
+    "faqpage",
+    Lang
+  >;
+
 type IndexDocumentDataSlicesSlice = never;
 
 /**
@@ -1109,6 +1495,7 @@ export type TesteDocument<Lang extends string = string> =
 export type AllDocumentTypes =
   | BlogDocument
   | BlogPostDocument
+  | FaqpageDocument
   | IndexDocument
   | LandingPageDocument
   | TesteDocument;
@@ -1788,6 +2175,71 @@ type EmAltaSliceVariation = EmAltaSliceDefault;
 export type EmAltaSlice = prismic.SharedSlice<"em_alta", EmAltaSliceVariation>;
 
 /**
+ * Primary content in *Faq → Items*
+ */
+export interface FaqSliceDefaultItem {
+  /**
+   * Pergunta field in *Faq → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faq.items[].pergunta
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta: prismic.KeyTextField;
+
+  /**
+   * Resposta field in *Faq → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faq.items[].resposta
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Faq Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<FaqSliceDefaultItem>
+>;
+
+/**
+ * titulo variation for Faq Slice
+ *
+ * - **API ID**: `titulo`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSliceTitulo = prismic.SharedSliceVariation<
+  "titulo",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Faq*
+ */
+type FaqSliceVariation = FaqSliceDefault | FaqSliceTitulo;
+
+/**
+ * Faq Shared Slice
+ *
+ * - **API ID**: `faq`
+ * - **Description**: Faq
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSlice = prismic.SharedSlice<"faq", FaqSliceVariation>;
+
+/**
  * Primary content in *Formulario → Primary*
  */
 export interface FormularioSliceDefaultPrimary {
@@ -2095,6 +2547,12 @@ declare module "@prismicio/client" {
       BlogPostDocumentData,
       BlogPostDocumentDataHeaderItem,
       BlogPostDocumentDataSlicesSlice,
+      FaqpageDocument,
+      FaqpageDocumentData,
+      FaqpageDocumentDataHeaderItem,
+      FaqpageDocumentDataRodapemenuItem,
+      FaqpageDocumentDataRodapeconteudosItem,
+      FaqpageDocumentDataSlicesSlice,
       IndexDocument,
       IndexDocumentData,
       IndexDocumentDataSlicesSlice,
@@ -2143,6 +2601,11 @@ declare module "@prismicio/client" {
       EmAltaSliceDefaultItem,
       EmAltaSliceVariation,
       EmAltaSliceDefault,
+      FaqSlice,
+      FaqSliceDefaultItem,
+      FaqSliceVariation,
+      FaqSliceDefault,
+      FaqSliceTitulo,
       FormularioSlice,
       FormularioSliceDefaultPrimary,
       FormularioSliceVariation,
