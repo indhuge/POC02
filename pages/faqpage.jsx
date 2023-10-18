@@ -38,8 +38,6 @@ export default function Page({ page, metadata }) {
 				<meta name="ROBOTS" content="INDEX, FOLLOW"></meta>
 				<link rel="icon" href="/favicon.ico" />
 
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJMN7XBGQ3" />
-
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `
@@ -63,7 +61,6 @@ export default function Page({ page, metadata }) {
 					conteudos={page?.data?.rodapeconteudos[0]}
 				/>
 			</div>
-			<script src="https://cdn.botpress.cloud/webchat/v0/inject.js" />
 		</>
 	);
 }
