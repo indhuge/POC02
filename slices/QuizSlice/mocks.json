@@ -1,0 +1,198 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"pergunta1",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "parallel",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta11",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "serious",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta21",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "clear",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta31",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "brown",
+							"type": "Text"
+						}
+					],
+					[
+						"pergunta2",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "jet",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta12",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "pond",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta22",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "declared",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta32",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "perhaps",
+							"type": "Text"
+						}
+					],
+					[
+						"pergunta3",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "original",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta13",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "organized",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta23",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "age",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta33",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "thing",
+							"type": "Text"
+						}
+					],
+					[
+						"pergunta4",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "bear",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta14",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "view",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta24",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "driver",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta34",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "strength",
+							"type": "Text"
+						}
+					],
+					[
+						"pergunta5",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "birthday",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta15",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "mountain",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta25",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "seems",
+							"type": "Text"
+						}
+					],
+					[
+						"resposta35",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "law",
+							"type": "Text"
+						}
+					],
+					[
+						"resultadoMaioriaA",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "exactly",
+							"type": "Text"
+						}
+					],
+					[
+						"resultadoMaioriaB",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "planned",
+							"type": "Text"
+						}
+					],
+					[
+						"resultadoMaioriaC",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "note",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]
