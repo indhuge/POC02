@@ -2459,6 +2459,44 @@ export type CorpoSliceMapa = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceBotaoQuizItem {
+  /**
+   * Titulo field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].tituloQuiz
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tituloQuiz: prismic.KeyTextField;
+
+  /**
+   * link field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].linkQuiz
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linkQuiz: prismic.KeyTextField;
+}
+
+/**
+ * Botao quiz variation for Corpo Slice
+ *
+ * - **API ID**: `botaoQuiz`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceBotaoQuiz = prismic.SharedSliceVariation<
+  "botaoQuiz",
+  Record<string, never>,
+  Simplify<CorpoSliceBotaoQuizItem>
+>;
+
+/**
  * Slice variation for *Corpo*
  */
 type CorpoSliceVariation =
@@ -2469,7 +2507,8 @@ type CorpoSliceVariation =
   | CorpoSliceDepoimentos
   | CorpoSliceGatilhossociais
   | CorpoSliceAgenda
-  | CorpoSliceMapa;
+  | CorpoSliceMapa
+  | CorpoSliceBotaoQuiz;
 
 /**
  * Corpo Shared Slice
@@ -3241,6 +3280,7 @@ declare module "@prismicio/client" {
       CorpoSliceDepoimentosItem,
       CorpoSliceGatilhossociaisItem,
       CorpoSliceAgendaItem,
+      CorpoSliceBotaoQuizItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
@@ -3250,6 +3290,7 @@ declare module "@prismicio/client" {
       CorpoSliceGatilhossociais,
       CorpoSliceAgenda,
       CorpoSliceMapa,
+      CorpoSliceBotaoQuiz,
       EmAltaSlice,
       EmAltaSliceDefaultPrimary,
       EmAltaSliceDefaultItem,

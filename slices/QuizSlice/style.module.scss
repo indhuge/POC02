@@ -77,6 +77,8 @@ left: 5%;
   font-weight: 600;
   margin: 5%;
   cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .popup{
@@ -89,7 +91,6 @@ left: 5%;
   border-color: #003F63;
   text-align: center;
   left: 33%;
-  margin-top: 5%;
   visibility: hidden;
 }
 
@@ -99,14 +100,31 @@ left: 5%;
 }
 
 .botaoPopup{
-  background-color: white;
+  background-color: #003F63;
   border: solid;
   border-color: #003F63;
-  border-radius: 8%;
   padding: 1%;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.linkHome{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
 }
 
 .open{
   visibility: hidden;
   z-index: 1000;
+}
+
+@media screen and (max-width: 760px) {
+  .popup{
+    width: 50%;
+    height: 220px;
+    left: 30%;
+    visibility: hidden;
+  }
 }
