@@ -12,4 +12,5 @@ export const components = {
   grupo_blog: dynamic(() => import("./GrupoBlog")),
   mapa: dynamic(() => import("./Mapa")),
   newsteller: dynamic(() => import("./Newsteller")),
+  quiz_slice: dynamic(() => import("./QuizSlice")),
 };
