@@ -273,7 +273,10 @@
                   <button type="button" className={Styles.botao} onClick={openPopup}>resultado</button>
 
                   <div className={Styles.popup} id="popup">
-                    {calculateResult() < 8 && (
+                    {calculateResult() == 0 && (
+                      <h2 className={Styles.textoPopup}>Responda o quiz para ver seu resultado</h2>
+                    )}
+                    {calculateResult() < 8 && calculateResult() > 0 &&(
                       <h2 className={Styles.textoPopup}>{i.resultadoMaioriaA}</h2>
                     )}
                     {calculateResult() >= 8 && calculateResult() < 11 && (
@@ -284,11 +287,9 @@
                     )}
                   <p className={Styles.textoPopup}>Entre em contato com a IndHuge para contratar um</p>
                   <button className={Styles.botaoPopup}>
-                      <a href="/#home">indhuge</a>
+                      <a href="/#home" className={Styles.linkHome}>indhuge</a>
                   </button>
                   </div>
-
-                  <p id="resultado">Soma: {calculateResult()}</p>
                   </form>
                   </div>
 

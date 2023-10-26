@@ -493,5 +493,33 @@
 				"value": []
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "botaoQuiz",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"tituloQuiz",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "wooden",
+							"type": "Text"
+						}
+					],
+					[
+						"linkQuiz",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "period",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

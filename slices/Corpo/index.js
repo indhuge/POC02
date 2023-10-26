@@ -104,6 +104,16 @@ const Corpo = ({ slice }) => {
 								</div>
 								</>
 							)}
+							{slice.variation === "botaoQuiz" && (
+								<>
+								<div className={Styles.quiz}>
+									<h3 className={Styles.textoQuiz}>{i.tituloQuiz}</h3>
+									<div className={Styles.botao1}>
+									<button className={Styles.botaoQuiz}><a className={Styles.linkQuiz} href="/quizpage">{i.linkQuiz}</a></button>
+									</div>
+								</div>
+								</>
+							)}
 						</div>
 					</div>
 				);

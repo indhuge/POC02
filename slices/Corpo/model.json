@@ -285,6 +285,31 @@
       "imageUrl": "",
       "primary": {},
       "items": {}
+    },
+    {
+      "id": "botaoQuiz",
+      "name": "Botao quiz",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "tituloQuiz": {
+          "type": "Text",
+          "config": {
+            "label": "Titulo",
+            "placeholder": ""
+          }
+        },
+        "linkQuiz": {
+          "type": "Text",
+          "config": {
+            "label": "link",
+            "placeholder": ""
+          }
+        }
+      }
     }
   ]
 }
