@@ -1,6 +1,7 @@
 const comentario = require("./sequelize/models/comentario");
+const survey_resp = require("./sequelize/models/survey-resp");
 
-comentario.sync({force:true})
+survey_resp.sync({force:true})
 /*
 (async () => {
     const teste = await comentario.findAll();
