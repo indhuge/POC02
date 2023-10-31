@@ -2540,10 +2540,30 @@ export interface CorpoSliceBotaoQuizItem {
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].linkQuiz
+   * - **API ID Path**: corpo.items[].link
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  linkQuiz: prismic.KeyTextField;
+  link: prismic.KeyTextField;
+
+  /**
+   * Label field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].labellink
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  labellink: prismic.KeyTextField;
+
+  /**
+   * Cor field in *Corpo → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].cor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  cor: prismic.ColorField;
 }
 
 /**
