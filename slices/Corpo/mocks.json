@@ -511,11 +511,27 @@
 						}
 					],
 					[
-						"linkQuiz",
+						"link",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "period",
+							"value": "region",
 							"type": "Text"
+						}
+					],
+					[
+						"labellink",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "member",
+							"type": "Text"
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#e13711",
+							"type": "Color"
 						}
 					]
 				]
