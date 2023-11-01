@@ -295,7 +295,7 @@
       "imageUrl": "",
       "primary": {},
       "items": {
-        "tituloQuiz": {
+        "titulo": {
           "type": "Text",
           "config": {
             "label": "Titulo",

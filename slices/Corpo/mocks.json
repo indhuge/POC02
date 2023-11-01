@@ -503,14 +503,6 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"tituloQuiz",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "wooden",
-							"type": "Text"
-						}
-					],
-					[
 						"link",
 						{
 							"__TYPE__": "FieldContent",
@@ -532,6 +524,14 @@
 							"__TYPE__": "FieldContent",
 							"value": "#e13711",
 							"type": "Color"
+						}
+					],
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "case",
+							"type": "Text"
 						}
 					]
 				]
