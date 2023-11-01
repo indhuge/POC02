@@ -503,18 +503,34 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"tituloQuiz",
+						"link",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "wooden",
+							"value": "region",
 							"type": "Text"
 						}
 					],
 					[
-						"linkQuiz",
+						"labellink",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "period",
+							"value": "member",
+							"type": "Text"
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#e13711",
+							"type": "Color"
+						}
+					],
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "case",
 							"type": "Text"
 						}
 					]
