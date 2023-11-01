@@ -302,24 +302,10 @@
             "placeholder": ""
           }
         },
-        "link": {
+        "linkQuiz": {
           "type": "Text",
           "config": {
             "label": "link",
-            "placeholder": ""
-          }
-        },
-        "labellink": {
-          "type": "Text",
-          "config": {
-            "label": "Label",
-            "placeholder": ""
-          }
-        },
-        "cor": {
-          "type": "Color",
-          "config": {
-            "label": "Cor",
             "placeholder": ""
           }
         }
