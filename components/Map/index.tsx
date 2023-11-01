@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 
 async function coordenadas(cidade, estado) {
-	const r1 = await fetch(`https://geocode.maps.co/search?city=${cidade}&state=${estado}`);
+	const r1 = await fetch("https://geocode.maps.co/search?city=" + cidade + "&state=" + estado);
 	const r2 = await r1.json();
 	return r2;
 }
