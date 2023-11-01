@@ -1,52 +1,56 @@
-@media only screen and (max-width: 640px){
-    .container{
-        h2{
+@media only screen and (max-width: 640px) {
+    .container {
+        h2 {
             font-size: 3vw;
         }
-        .imagens{
+
+        .imagens {
             grid-template-columns: 1fr !important;
 
-            div{
+            div {
                 margin-bottom: 5vw;
             }
         }
-        .botao{ 
+
+        .botao {
             margin-bottom: 5vw;
-            button{
+
+            button {
                 width: 80% !important;
                 font-size: 5vw !important;
             }
         }
     }
-    .depoimentos{
+
+    .depoimentos {
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
         height: fit-content;
         padding: 1em;
-}
+    }
 }
 
-.container{
+.container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     z-index: 0;
 }
 
-.container div{
+.container div {
     z-index: -1;
     font-size: 1.5vw;
     height: 10vw;
 }
 
-.container div h2{
+.container div h2 {
     margin-top: 4vw;
     text-align: center;
     align-self: center;
 }
 
-.item{
+.item {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -54,11 +58,12 @@
     background-size: cover;
     height: fit-content !important;
     z-index: -1;
-    h2{
+
+    h2 {
         margin-bottom: 4vw;
     }
 
-    .imagens{
+    .imagens {
         align-self: center;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -66,39 +71,42 @@
         width: 100%;
         height: auto;
 
-        div{
+        div {
             height: auto;
         }
 
-        img{
+        img {
             margin-left: 10%;
             width: 80%;
             height: auto;
         }
     }
 
-    .frame{
+    .frame {
         width: 100%;
         height: fit-content !important;
         justify-items: center;
         align-items: center;
         display: grid;
-        div{
+
+        div {
             width: 40%;
             height: 20vw;
             padding-bottom: 3vw;
-            iframe{
+
+            iframe {
                 width: 100%;
                 height: 100%;
             }
         }
     }
 
-    .botao{
+    .botao {
         width: 100%;
         display: flex;
         justify-content: center;
-        button{
+
+        button {
             margin-top: 5vw;
             margin-bottom: 5vw;
             align-self: center;
@@ -109,44 +117,50 @@
             border-width: 0;
             font-size: 1.5vw;
 
-            a{
+            a {
                 color: white;
                 text-decoration: none;
             }
         }
-        :hover{
+
+        :hover {
             font-weight: bold !important;
         }
 
-        :active{
+        :active {
             background-color: #F2B138 !important;
-        }  
+        }
     }
-    .gs{
+
+    .gs {
         text-align: center;
-        h3{
+
+        h3 {
             font-size: 5em;
             color: #003F63;
             bottom: 40%;
         }
-        label{
+
+        label {
             font-size: 1.5em;
             bottom: 20%;
         }
     }
-    .logos{
+
+    .logos {
         height: 12em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
         background-color: #F2B138;
 
-        img{
+        img {
             width: 10em;
             height: 10em;
         }
     }
-    .logotitulo{
+
+    .logotitulo {
         text-align: center;
         font-size: 1.8em;
         color: white;
@@ -155,30 +169,32 @@
         height: 2em;
     }
 
-    .depoimentos{
+    .depoimentos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
         height: fit-content;
         padding: 1em;
-        
-    .textoDepoimentos{
-        padding: 0.5em;
-    }
-    .nomesDepoimentos{
-        color: #003F63;
-        padding-top: 1.5em;
-    }
+
+        .textoDepoimentos {
+            padding: 0.5em;
+        }
+
+        .nomesDepoimentos {
+            color: #003F63;
+            padding-top: 1.5em;
+        }
     }
 
-    .agenda{
+    .agenda {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         padding-bottom: 3em;
-        .botaoAgendar{
-            color:white;
+
+        .botaoAgendar {
+            color: white;
             background-color: #003F63;
             width: 30%;
             height: 4em;
@@ -193,79 +209,71 @@
         width: 100%;
         height: 30em;
         justify-content: center;
-        
 
-        .textoMapa{
+
+        .textoMapa {
             width: 100%;
             font-size: 2em;
             text-align: center;
-           color: #003F63;
+            color: #003F63;
             font-weight: bold;
             padding-top: 1em;
-          }
+        }
 
-          .mapa {
+        .mapa {
             width: 60em;
             height: 100%;
-          }
-      }
-
-      .quiz{
-        text-align: center;
-        width: 100%;
-        height: 140px;
-      }
-
-      .textoQuiz{
-        font-size: 1.5em;
-      }
-
-      .botao1{
-        width: 100%;
-        height: 100%;
-        padding-top: 2%;
-      }
-      .botaoQuiz{
-        background-color: #003F63;
-        width: 20%;
-        height: 40%;
-        border-radius: 20px;
-      }
-
-      .linkQuiz{
-        text-decoration: none;
-        color: white;
-        font-size: 1.5em;
-      }
-      
+        }
+    }
 
     @media screen and (max-width: 700px) {
- .depoimentos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+        .depoimentos {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
-    .ItemDepoimento{
-        margin-bottom: 4em;
+            .ItemDepoimento {
+                margin-bottom: 4em;
 
-        .textoDepoimentos{
-            margin: 0;
-            padding: 0;
-            height: 70%;
-            font-size: 1.5em;
+                .textoDepoimentos {
+                    margin: 0;
+                    padding: 0;
+                    height: 70%;
+                    font-size: 1.5em;
+                }
+
+                .nomesDepoimentos {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1.8em;
+                }
+            }
         }
-        .nomesDepoimentos{
-            margin: 0;
-            padding: 0;
-            font-size: 1.8em;
+
+        .agenda {
+            .botaoAgendar {
+                font-size: 2em;
+                width: 45%;
+            }
         }
     }
- }
- .agenda{
-    .botaoAgendar{
-        font-size: 2em;
-        width: 45%;
+
+    .quiz {
+        text-align: center;
+        width: 100%;
     }
- }
-}
+
+    .linkQuiz {
+        text-decoration: none;
+    }
+    .botaoQuiz {
+        background-color: #003F63;
+        color: white;
+        font-size: 1.5em;
+        width: 20%;
+        height: 8vh;
+        border-radius: 20px;
+        margin-bottom: 10vh;
+    }
+
 }

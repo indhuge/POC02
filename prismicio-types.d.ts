@@ -1812,6 +1812,68 @@ interface QuizDocumentData {
 export type QuizDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<QuizDocumentData>, "quiz", Lang>;
 
+type SurveyDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Survey documents
+ */
+interface SurveyDocumentData {
+  /**
+   * Slice Zone field in *Survey*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: survey.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<SurveyDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Survey*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: survey.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Survey*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: survey.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Survey*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: survey.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Survey document from Prismic
+ *
+ * - **API ID**: `survey`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SurveyDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<SurveyDocumentData>, "survey", Lang>;
+
 type TesteDocumentDataSlicesSlice = never;
 
 /**
@@ -1881,6 +1943,7 @@ export type AllDocumentTypes =
   | IndexDocument
   | LandingPageDocument
   | QuizDocument
+  | SurveyDocument
   | TesteDocument;
 
 /**
@@ -2467,20 +2530,40 @@ export interface CorpoSliceBotaoQuizItem {
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].tituloQuiz
+   * - **API ID Path**: corpo.items[].titulo
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  tituloQuiz: prismic.KeyTextField;
+  titulo: prismic.KeyTextField;
 
   /**
    * link field in *Corpo → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: corpo.items[].linkQuiz
+   * - **API ID Path**: corpo.items[].link
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  linkQuiz: prismic.KeyTextField;
+  link: prismic.KeyTextField;
+
+  /**
+   * Label field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].labellink
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  labellink: prismic.KeyTextField;
+
+  /**
+   * Cor field in *Corpo → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].cor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  cor: prismic.ColorField;
 }
 
 /**
@@ -3256,6 +3339,9 @@ declare module "@prismicio/client" {
       QuizDocumentDataRodapemenuItem,
       QuizDocumentDataRodapeconteudosItem,
       QuizDocumentDataSlicesSlice,
+      SurveyDocument,
+      SurveyDocumentData,
+      SurveyDocumentDataSlicesSlice,
       TesteDocument,
       TesteDocumentData,
       TesteDocumentDataSlicesSlice,
