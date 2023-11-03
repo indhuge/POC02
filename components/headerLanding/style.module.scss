@@ -11,24 +11,24 @@
         }
 
         a {
-            //font-size: 3.8vw !important;
+            font-size: 1vh !important;
             margin: 0vw 1vw !important;
             text-align: center !important;
         }
 
         button {
-            //font-size: 3vw !important;
+            font-size: 1vh !important;
             margin: 0vw 10% !important;
         }
     }
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     padding: 1vw 0vw;
     position: fixed !important;
     display: grid;
-    grid-template-columns: 2fr 6fr 1fr 1fr;
+    grid-template-columns: 2fr 5fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     background-color: #DEDEDE;
@@ -36,10 +36,9 @@
     height: auto;
 
     .logo {
-        width: 100%;
-        margin-left: 10%;
 
         img {
+            margin-left: 10%;
             height: 4vw;
             width: auto;
         }
