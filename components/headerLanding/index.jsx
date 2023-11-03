@@ -4,16 +4,7 @@ import Styles from "./style.module.scss"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
-const Header = ({
-    dados
-}) => {
-
-    const [logo, setLogo] = useState([])
-
-    useEffect(() => {
-        setLogo(logo);
-    }, [])
-
+const Header = ({ dados }) => {
     console.log({ dados });
     return <div className={Styles.container}>
         <div className={Styles.logo}>
@@ -29,7 +20,7 @@ const Header = ({
             <Link href={dados?.linkbotao}><button><label>{dados?.botaolabel}</label></button></Link>
         </div>
         <div className={Styles.idioma}>
-            <Link href={dados?.idioma? "./" : "./en"}>{dados?.idioma? "EN-US" : "PT-BR"}</Link>
+            <Link href={dados?.idioma ? "./" : "./en"}>{dados?.idioma ? "EN-US" : "PT-BR"}</Link>
         </div>
     </div>
 };
