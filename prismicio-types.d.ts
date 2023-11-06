@@ -1556,7 +1556,7 @@ export interface QuizDocumentDataHeaderItem {
   link4: prismic.KeyTextField;
 
   /**
-   * ingles field in *quiz → Header*
+   * idioma field in *quiz → Header*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
@@ -3288,6 +3288,26 @@ export interface QuizSliceSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   resultadoMaioriaC: prismic.KeyTextField;
+
+  /**
+   * textoBotao field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textobotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textobotao: prismic.KeyTextField;
+
+  /**
+   * textoResultado field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textoresultado
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textoresultado: prismic.KeyTextField;
 }
 
 /**

@@ -270,7 +270,7 @@
                   </div>
                   </div>
                   
-                  <button type="button" className={Styles.botao} onClick={openPopup}>resultado</button>
+                  <button type="button" className={Styles.botao} onClick={openPopup}>{i.textobotao}</button>
 
                   <div className={Styles.popup} id="popup">
                     {calculateResult() == 0 && (
@@ -285,7 +285,7 @@
                     {calculateResult() >= 11 && (
                       <h2 className={Styles.textoPopup}>{i.resultadoMaioriaC}</h2>
                     )}
-                  <p className={Styles.textoPopup}>Entre em contato com a IndHuge para contratar um</p>
+                  <p className={Styles.textoPopup}>{i.textoresultado}</p>
                   <button className={Styles.botaoPopup}>
                       <a href="/#home" className={Styles.linkHome}>indhuge</a>
                   </button>

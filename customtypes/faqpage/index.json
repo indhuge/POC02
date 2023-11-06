@@ -99,9 +99,9 @@
               "type": "Boolean",
               "config": {
                 "label": "idioma",
-                "placeholder_false": "false",
+                "default_value": false,
                 "placeholder_true": "true",
-                "default_value": false
+                "placeholder_false": "false"
               }
             }
           }
