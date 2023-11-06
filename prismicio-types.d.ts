@@ -1554,6 +1554,17 @@ export interface QuizDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link4: prismic.KeyTextField;
+
+  /**
+   * ingles field in *quiz → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: quiz.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
 }
 
 /**
