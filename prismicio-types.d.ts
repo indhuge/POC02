@@ -594,6 +594,17 @@ export interface FaqpageDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link4: prismic.KeyTextField;
+
+  /**
+   * idioma field in *faqpage → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: faqpage.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
 }
 
 /**
@@ -1545,7 +1556,7 @@ export interface QuizDocumentDataHeaderItem {
   link4: prismic.KeyTextField;
 
   /**
-   * ingles field in *quiz → Header*
+   * idioma field in *quiz → Header*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
