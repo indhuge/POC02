@@ -1,9 +1,9 @@
 import { SliceZone } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import Header from "../components/headerLanding";
-import Rodape from '../components/rodapeLanding';
-import Styles from "./style.module.scss";
+import Header from "../../components/headerLanding"
+import Rodape from '../../components/rodapeLanding'
+import Styles from "./style.module.scss"
 import { useEffect } from "react";
 import Head from 'next/head';
 
