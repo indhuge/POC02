@@ -5,6 +5,36 @@ export const json = {
       "name": "page1",
       "elements": [
        {
+        "type": "panel",
+        "name": "question11",
+        "elements": [
+         {
+          "type": "text",
+          "name": "question12",
+          "title": "Name"
+         },
+         {
+          "type": "text",
+          "name": "question13",
+          "title": "E-mail",
+          "inputType": "email"
+         },
+         {
+          "type": "text",
+          "name": "question14",
+          "title": "Birth",
+          "inputType": "date"
+         }
+        ],
+        "title": "Personal Data (Optional)"
+       }
+      ],
+      "title": "Personal Data"
+     },
+     {
+      "name": "page2",
+      "elements": [
+       {
         "type": "checkbox",
         "name": "question1",
         "title": "What are the key maintenance challenges your organization faces?",
@@ -79,7 +109,7 @@ export const json = {
       "title": "Needs Assessment Survey"
      },
      {
-      "name": "page2",
+      "name": "page3",
       "elements": [
        {
         "type": "checkbox",
@@ -131,7 +161,7 @@ export const json = {
       "title": "Feature Prioritization Survey"
      },
      {
-      "name": "page3",
+      "name": "page4",
       "elements": [
        {
         "type": "rating",
@@ -208,7 +238,7 @@ export const json = {
       "title": "User Experience and Interface Survey"
      },
      {
-      "name": "page4",
+      "name": "page5",
       "elements": [
        {
         "type": "rating",
