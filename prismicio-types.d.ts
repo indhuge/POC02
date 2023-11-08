@@ -660,6 +660,17 @@ export interface FaqpageDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link4: prismic.KeyTextField;
+
+  /**
+   * idioma field in *faqpage → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: faqpage.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
 }
 
 /**
@@ -1609,6 +1620,17 @@ export interface QuizDocumentDataHeaderItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   link4: prismic.KeyTextField;
+
+  /**
+   * idioma field in *quiz → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: quiz.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
 }
 
 /**
@@ -3333,6 +3355,26 @@ export interface QuizSliceSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   resultadoMaioriaC: prismic.KeyTextField;
+
+  /**
+   * textoBotao field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textobotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textobotao: prismic.KeyTextField;
+
+  /**
+   * textoResultado field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textoresultado
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textoresultado: prismic.KeyTextField;
 }
 
 /**

@@ -173,6 +173,20 @@
             "label": "resultado Maioria C",
             "placeholder": ""
           }
+        },
+        "textobotao": {
+          "type": "Text",
+          "config": {
+            "label": "textoBotao",
+            "placeholder": ""
+          }
+        },
+        "textoresultado": {
+          "type": "Text",
+          "config": {
+            "label": "textoResultado",
+            "placeholder": ""
+          }
         }
       }
     }

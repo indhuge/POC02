@@ -94,6 +94,15 @@
                 "label": "Link 4",
                 "placeholder": ""
               }
+            },
+            "idioma": {
+              "type": "Boolean",
+              "config": {
+                "label": "idioma",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
             }
           }
         }

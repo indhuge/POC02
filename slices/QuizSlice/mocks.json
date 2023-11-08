@@ -190,6 +190,22 @@
 							"value": "note",
 							"type": "Text"
 						}
+					],
+					[
+						"textobotao",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "myself",
+							"type": "Text"
+						}
+					],
+					[
+						"textoresultado",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "only",
+							"type": "Text"
+						}
 					]
 				]
 			}
