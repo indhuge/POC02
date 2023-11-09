@@ -481,6 +481,72 @@ export type BlogPostDocument<Lang extends string = string> =
     Lang
   >;
 
+type DashboardDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Dashboard documents
+ */
+interface DashboardDocumentData {
+  /**
+   * Slice Zone field in *Dashboard*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: dashboard.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<DashboardDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Dashboard*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: dashboard.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Dashboard*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: dashboard.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Dashboard*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: dashboard.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Dashboard document from Prismic
+ *
+ * - **API ID**: `dashboard`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type DashboardDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<DashboardDocumentData>,
+    "dashboard",
+    Lang
+  >;
+
 /**
  * Item in *faqpage → Header*
  */
@@ -1961,6 +2027,7 @@ export type TesteDocument<Lang extends string = string> =
 export type AllDocumentTypes =
   | BlogDocument
   | BlogPostDocument
+  | DashboardDocument
   | FaqpageDocument
   | IndexDocument
   | LandingPageDocument
@@ -3359,6 +3426,9 @@ declare module "@prismicio/client" {
       BlogPostDocumentData,
       BlogPostDocumentDataHeaderItem,
       BlogPostDocumentDataSlicesSlice,
+      DashboardDocument,
+      DashboardDocumentData,
+      DashboardDocumentDataSlicesSlice,
       FaqpageDocument,
       FaqpageDocumentData,
       FaqpageDocumentDataHeaderItem,

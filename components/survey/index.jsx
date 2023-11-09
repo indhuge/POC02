@@ -7,18 +7,13 @@ import { json } from "./json";
 import { useRouter } from "next/navigation";
 
 async function enviar(resp, router) {
-    //resp = JSON.parse(resp);
     console.log(resp);
-
-    /*resp.forEach(element => {
-        
-    });*/
 
     fetch("/api/retornaSurvey", {
         method: "POST",
         body: resp,
     });
-    //router.push("/")
+    router.push("/survey/dashboard")
 }
 
 function SurveyComponent() {

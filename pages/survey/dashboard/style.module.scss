@@ -1,0 +1,40 @@
+.container {
+    background-color: #F2B138;
+    width: 100%;
+}
+
+.containerInt {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5vh;
+}
+
+.card {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.card div {
+    border-radius: 1vh;
+    width: 86%;
+    padding: 2%;
+    margin-left: 5%;
+    background-color: white;
+}
+
+.botao {
+    background-color: white;
+    margin-left: 2.5%;
+    margin-top: 5vh;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color: white;
+}
+
+.botao:hover{
+    background-color: #F2B138;
+    border-color: black;
+}
