@@ -1,0 +1,194 @@
+{
+  "id": "quiz_slice",
+  "type": "SharedSlice",
+  "name": "QuizSlice",
+  "description": "QuizSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "pergunta1": {
+          "type": "Text",
+          "config": {
+            "label": "pergunta1",
+            "placeholder": ""
+          }
+        },
+        "resposta11": {
+          "type": "Text",
+          "config": {
+            "label": "resposta1.1",
+            "placeholder": ""
+          }
+        },
+        "resposta21": {
+          "type": "Text",
+          "config": {
+            "label": "resposta2.1",
+            "placeholder": ""
+          }
+        },
+        "resposta31": {
+          "type": "Text",
+          "config": {
+            "label": "resposta3.1",
+            "placeholder": ""
+          }
+        },
+        "pergunta2": {
+          "type": "Text",
+          "config": {
+            "label": "pergunta2",
+            "placeholder": ""
+          }
+        },
+        "resposta12": {
+          "type": "Text",
+          "config": {
+            "label": "resposta1.2",
+            "placeholder": ""
+          }
+        },
+        "resposta22": {
+          "type": "Text",
+          "config": {
+            "label": "resposta2.2",
+            "placeholder": ""
+          }
+        },
+        "resposta32": {
+          "type": "Text",
+          "config": {
+            "label": "resposta3.2",
+            "placeholder": ""
+          }
+        },
+        "pergunta3": {
+          "type": "Text",
+          "config": {
+            "label": "pergunta3",
+            "placeholder": ""
+          }
+        },
+        "resposta13": {
+          "type": "Text",
+          "config": {
+            "label": "resposta1.3",
+            "placeholder": ""
+          }
+        },
+        "resposta23": {
+          "type": "Text",
+          "config": {
+            "label": "resposta2.3",
+            "placeholder": ""
+          }
+        },
+        "resposta33": {
+          "type": "Text",
+          "config": {
+            "label": "resposta3.3",
+            "placeholder": ""
+          }
+        },
+        "pergunta4": {
+          "type": "Text",
+          "config": {
+            "label": "pergunta4",
+            "placeholder": ""
+          }
+        },
+        "resposta14": {
+          "type": "Text",
+          "config": {
+            "label": "resposta1.4",
+            "placeholder": ""
+          }
+        },
+        "resposta24": {
+          "type": "Text",
+          "config": {
+            "label": "resposta2.4",
+            "placeholder": ""
+          }
+        },
+        "resposta34": {
+          "type": "Text",
+          "config": {
+            "label": "resposta3.4",
+            "placeholder": ""
+          }
+        },
+        "pergunta5": {
+          "type": "Text",
+          "config": {
+            "label": "pergunta5",
+            "placeholder": ""
+          }
+        },
+        "resposta15": {
+          "type": "Text",
+          "config": {
+            "label": "resposta1.5",
+            "placeholder": ""
+          }
+        },
+        "resposta25": {
+          "type": "Text",
+          "config": {
+            "label": "resposta2.5",
+            "placeholder": ""
+          }
+        },
+        "resposta35": {
+          "type": "Text",
+          "config": {
+            "label": "resposta3.5",
+            "placeholder": ""
+          }
+        },
+        "resultadoMaioriaA": {
+          "type": "Text",
+          "config": {
+            "label": "resultado Maioria A",
+            "placeholder": ""
+          }
+        },
+        "resultadoMaioriaB": {
+          "type": "Text",
+          "config": {
+            "label": "resultado Maioria B",
+            "placeholder": ""
+          }
+        },
+        "resultadoMaioriaC": {
+          "type": "Text",
+          "config": {
+            "label": "resultado Maioria C",
+            "placeholder": ""
+          }
+        },
+        "textobotao": {
+          "type": "Text",
+          "config": {
+            "label": "textoBotao",
+            "placeholder": ""
+          }
+        },
+        "textoresultado": {
+          "type": "Text",
+          "config": {
+            "label": "textoResultado",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

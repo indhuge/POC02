@@ -1,0 +1,278 @@
+{
+  "id": "faqpage",
+  "label": "faqpage",
+  "format": "page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "header": {
+        "type": "Group",
+        "config": {
+          "label": "Header",
+          "fields": {
+            "logo": {
+              "type": "Image",
+              "config": {
+                "label": "logo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
+                "placeholder": ""
+              }
+            },
+            "botaolabel": {
+              "type": "Text",
+              "config": {
+                "label": "Botao Label",
+                "placeholder": ""
+              }
+            },
+            "linkbotao": {
+              "type": "Text",
+              "config": {
+                "label": "Link Botao",
+                "placeholder": ""
+              }
+            },
+            "linklabel4": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 4",
+                "placeholder": ""
+              }
+            },
+            "link4": {
+              "type": "Text",
+              "config": {
+                "label": "Link 4",
+                "placeholder": ""
+              }
+            },
+            "idioma": {
+              "type": "Boolean",
+              "config": {
+                "label": "idioma",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
+            }
+          }
+        }
+      },
+      "rodapemenu": {
+        "type": "Group",
+        "config": {
+          "label": "Rodape Menu",
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Titulo",
+                "placeholder": ""
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
+                "placeholder": ""
+              }
+            },
+            "linklabel4": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 4",
+                "placeholder": ""
+              }
+            },
+            "link4": {
+              "type": "Text",
+              "config": {
+                "label": "Link 4",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "rodapeconteudos": {
+        "type": "Group",
+        "config": {
+          "label": "Rodape Conteudos",
+          "fields": {
+            "titulo": {
+              "type": "Text",
+              "config": {
+                "label": "Titulo",
+                "placeholder": ""
+              }
+            },
+            "linklabel1": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 1",
+                "placeholder": ""
+              }
+            },
+            "link1": {
+              "type": "Text",
+              "config": {
+                "label": "Link 1",
+                "placeholder": ""
+              }
+            },
+            "linklabel2": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 2",
+                "placeholder": ""
+              }
+            },
+            "link2": {
+              "type": "Text",
+              "config": {
+                "label": "Link 2",
+                "placeholder": ""
+              }
+            },
+            "linklabel3": {
+              "type": "Text",
+              "config": {
+                "label": "Link Label 3",
+                "placeholder": ""
+              }
+            },
+            "link3": {
+              "type": "Text",
+              "config": {
+                "label": "Link 3",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "faq": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

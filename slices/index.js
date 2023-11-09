@@ -7,8 +7,10 @@ export const components = {
   blog_conteudo: dynamic(() => import("./BlogConteudo")),
   corpo: dynamic(() => import("./Corpo")),
   em_alta: dynamic(() => import("./EmAlta")),
+  faq: dynamic(() => import("./Faq")),
   formulario: dynamic(() => import("./Formulario")),
   grupo_blog: dynamic(() => import("./GrupoBlog")),
   mapa: dynamic(() => import("./Mapa")),
   newsteller: dynamic(() => import("./Newsteller")),
+  quiz_slice: dynamic(() => import("./QuizSlice")),
 };

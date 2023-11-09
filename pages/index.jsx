@@ -11,28 +11,12 @@ import { createClient } from "@/prismicio";
 import { SliceZone } from "@prismicio/react";
 import { components } from "@/slices";
 import Popup from '../components/Popup';
-import { ParallaxProvider } from 'react-scroll-parallax'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ page, metadata }) {
-	/*conexão com o servidor do chatbot*/
-	useEffect(() => {
-		async function carregaBot() {
-			await window.botpressWebChat?.init({
-				composerPlaceholder: "Chat with IndHelp",
-				botConversationDescription: "Tire suas duvidas",
-				botId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-				hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-				messagingUrl: "https://messaging.botpress.cloud",
-				clientId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-				botName: "IndHelp",
-			});
-		}
-		carregaBot();
-	});
 	console.log(page?.data);
 	return (
 		<>
@@ -71,7 +55,7 @@ export default function Home({ page, metadata }) {
 					className={Styles.header}
 					dados={page?.data?.header[0]}
 				/>
-				<ParallaxProvider><Banner dados={page?.data?.banner[0]} /></ParallaxProvider>
+				<Banner dados={page?.data?.banner[0]} />
 				<SliceZone slices={page?.data?.slices} components={components} />
 				<Rodape
 					menu={page?.data?.rodapemenu[0]}

@@ -493,5 +493,49 @@
 				"value": []
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "botaoQuiz",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "region",
+							"type": "Text"
+						}
+					],
+					[
+						"labellink",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "member",
+							"type": "Text"
+						}
+					],
+					[
+						"cor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#e13711",
+							"type": "Color"
+						}
+					],
+					[
+						"titulo",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "case",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

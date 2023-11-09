@@ -29,7 +29,7 @@
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 100vw;
     z-index: 0;
     font-size: 1.5vw;
     padding-top: 5vw;
@@ -51,15 +51,15 @@
 }
 
 .mensagem{
-    padding-top: 1vw !important;
-    margin-top: 1%;
+    margin-top: 1vw;
     resize: none;
-    width: 51%;
-    padding-left: 1vw;
+    width: 52%;
     background-color:  white;
     border-color: #DEDEDE;
-    border-radius: 2vw;
+    border-radius: 1vw;
     height: 10vw;
+    font-size: 1vw;
+    padding-top: 1vw;
 }
 
 .container input:last-of-type{

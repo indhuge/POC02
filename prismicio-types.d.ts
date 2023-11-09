@@ -481,6 +481,469 @@ export type BlogPostDocument<Lang extends string = string> =
     Lang
   >;
 
+type DashboardDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Dashboard documents
+ */
+interface DashboardDocumentData {
+  /**
+   * Slice Zone field in *Dashboard*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: dashboard.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<DashboardDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Dashboard*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: dashboard.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Dashboard*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: dashboard.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Dashboard*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: dashboard.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Dashboard document from Prismic
+ *
+ * - **API ID**: `dashboard`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type DashboardDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<DashboardDocumentData>,
+    "dashboard",
+    Lang
+  >;
+
+/**
+ * Item in *faqpage → Header*
+ */
+export interface FaqpageDocumentDataHeaderItem {
+  /**
+   * logo field in *faqpage → Header*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * Link Label 1 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Botao Label field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].botaolabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  botaolabel: prismic.KeyTextField;
+
+  /**
+   * Link Botao field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linkbotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linkbotao: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *faqpage → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+
+  /**
+   * idioma field in *faqpage → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: faqpage.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
+}
+
+/**
+ * Item in *faqpage → Rodape Menu*
+ */
+export interface FaqpageDocumentDataRodapemenuItem {
+  /**
+   * Titulo field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *faqpage → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+}
+
+/**
+ * Item in *faqpage → Rodape Conteudos*
+ */
+export interface FaqpageDocumentDataRodapeconteudosItem {
+  /**
+   * Titulo field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *faqpage → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+}
+
+type FaqpageDocumentDataSlicesSlice = FaqSlice;
+
+/**
+ * Content for faqpage documents
+ */
+interface FaqpageDocumentData {
+  /**
+   * Header field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.header[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  header: prismic.GroupField<Simplify<FaqpageDocumentDataHeaderItem>>;
+
+  /**
+   * Rodape Menu field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapemenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapemenu: prismic.GroupField<Simplify<FaqpageDocumentDataRodapemenuItem>>;
+
+  /**
+   * Rodape Conteudos field in *faqpage*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.rodapeconteudos[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapeconteudos: prismic.GroupField<
+    Simplify<FaqpageDocumentDataRodapeconteudosItem>
+  >;
+
+  /**
+   * Slice Zone field in *faqpage*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<FaqpageDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *faqpage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: faqpage.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *faqpage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faqpage.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *faqpage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: faqpage.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * faqpage document from Prismic
+ *
+ * - **API ID**: `faqpage`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FaqpageDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<FaqpageDocumentData>,
+    "faqpage",
+    Lang
+  >;
+
 type IndexDocumentDataSlicesSlice = never;
 
 /**
@@ -1044,6 +1507,461 @@ export type LandingPageDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Item in *quiz → Header*
+ */
+export interface QuizDocumentDataHeaderItem {
+  /**
+   * logo field in *quiz → Header*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * Link Label 1 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Botao Label field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].botaolabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  botaolabel: prismic.KeyTextField;
+
+  /**
+   * Link Botao field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].linkbotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linkbotao: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *quiz → Header*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+
+  /**
+   * idioma field in *quiz → Header*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: quiz.header[].idioma
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  idioma: prismic.BooleanField;
+}
+
+/**
+ * Item in *quiz → Rodape Menu*
+ */
+export interface QuizDocumentDataRodapemenuItem {
+  /**
+   * Titulo field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+
+  /**
+   * Link Label 4 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].linklabel4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel4: prismic.KeyTextField;
+
+  /**
+   * Link 4 field in *quiz → Rodape Menu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[].link4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link4: prismic.KeyTextField;
+}
+
+/**
+ * Item in *quiz → Rodape Conteudos*
+ */
+export interface QuizDocumentDataRodapeconteudosItem {
+  /**
+   * Titulo field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * Link Label 1 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].linklabel1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel1: prismic.KeyTextField;
+
+  /**
+   * Link 1 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].link1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link1: prismic.KeyTextField;
+
+  /**
+   * Link Label 2 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].linklabel2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel2: prismic.KeyTextField;
+
+  /**
+   * Link 2 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].link2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link2: prismic.KeyTextField;
+
+  /**
+   * Link Label 3 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].linklabel3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel3: prismic.KeyTextField;
+
+  /**
+   * Link 3 field in *quiz → Rodape Conteudos*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[].link3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link3: prismic.KeyTextField;
+}
+
+type QuizDocumentDataSlicesSlice = QuizSliceSlice;
+
+/**
+ * Content for quiz documents
+ */
+interface QuizDocumentData {
+  /**
+   * Header field in *quiz*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.header[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  header: prismic.GroupField<Simplify<QuizDocumentDataHeaderItem>>;
+
+  /**
+   * Rodape Menu field in *quiz*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapemenu[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapemenu: prismic.GroupField<Simplify<QuizDocumentDataRodapemenuItem>>;
+
+  /**
+   * Rodape Conteudos field in *quiz*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.rodapeconteudos[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  rodapeconteudos: prismic.GroupField<
+    Simplify<QuizDocumentDataRodapeconteudosItem>
+  >;
+
+  /**
+   * Slice Zone field in *quiz*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<QuizDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *quiz*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: quiz.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *quiz*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *quiz*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: quiz.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * quiz document from Prismic
+ *
+ * - **API ID**: `quiz`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type QuizDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<QuizDocumentData>, "quiz", Lang>;
+
+type SurveyDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Survey documents
+ */
+interface SurveyDocumentData {
+  /**
+   * Slice Zone field in *Survey*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: survey.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<SurveyDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Survey*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: survey.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Survey*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: survey.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Survey*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: survey.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Survey document from Prismic
+ *
+ * - **API ID**: `survey`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SurveyDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<SurveyDocumentData>, "survey", Lang>;
+
 type TesteDocumentDataSlicesSlice = never;
 
 /**
@@ -1109,8 +2027,12 @@ export type TesteDocument<Lang extends string = string> =
 export type AllDocumentTypes =
   | BlogDocument
   | BlogPostDocument
+  | DashboardDocument
+  | FaqpageDocument
   | IndexDocument
   | LandingPageDocument
+  | QuizDocument
+  | SurveyDocument
   | TesteDocument;
 
 /**
@@ -1689,6 +2611,64 @@ export type CorpoSliceMapa = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Corpo → Items*
+ */
+export interface CorpoSliceBotaoQuizItem {
+  /**
+   * Titulo field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].titulo
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  titulo: prismic.KeyTextField;
+
+  /**
+   * link field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].link
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  link: prismic.KeyTextField;
+
+  /**
+   * Label field in *Corpo → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].labellink
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  labellink: prismic.KeyTextField;
+
+  /**
+   * Cor field in *Corpo → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: corpo.items[].cor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  cor: prismic.ColorField;
+}
+
+/**
+ * Botao quiz variation for Corpo Slice
+ *
+ * - **API ID**: `botaoQuiz`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CorpoSliceBotaoQuiz = prismic.SharedSliceVariation<
+  "botaoQuiz",
+  Record<string, never>,
+  Simplify<CorpoSliceBotaoQuizItem>
+>;
+
+/**
  * Slice variation for *Corpo*
  */
 type CorpoSliceVariation =
@@ -1699,7 +2679,8 @@ type CorpoSliceVariation =
   | CorpoSliceDepoimentos
   | CorpoSliceGatilhossociais
   | CorpoSliceAgenda
-  | CorpoSliceMapa;
+  | CorpoSliceMapa
+  | CorpoSliceBotaoQuiz;
 
 /**
  * Corpo Shared Slice
@@ -1786,6 +2767,71 @@ type EmAltaSliceVariation = EmAltaSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type EmAltaSlice = prismic.SharedSlice<"em_alta", EmAltaSliceVariation>;
+
+/**
+ * Primary content in *Faq → Items*
+ */
+export interface FaqSliceDefaultItem {
+  /**
+   * Pergunta field in *Faq → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faq.items[].pergunta
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta: prismic.KeyTextField;
+
+  /**
+   * Resposta field in *Faq → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: faq.items[].resposta
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for Faq Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<FaqSliceDefaultItem>
+>;
+
+/**
+ * titulo variation for Faq Slice
+ *
+ * - **API ID**: `titulo`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSliceTitulo = prismic.SharedSliceVariation<
+  "titulo",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Faq*
+ */
+type FaqSliceVariation = FaqSliceDefault | FaqSliceTitulo;
+
+/**
+ * Faq Shared Slice
+ *
+ * - **API ID**: `faq`
+ * - **Description**: Faq
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FaqSlice = prismic.SharedSlice<"faq", FaqSliceVariation>;
 
 /**
  * Primary content in *Formulario → Primary*
@@ -2076,6 +3122,291 @@ export type NewstellerSlice = prismic.SharedSlice<
   NewstellerSliceVariation
 >;
 
+/**
+ * Primary content in *QuizSlice → Items*
+ */
+export interface QuizSliceSliceDefaultItem {
+  /**
+   * pergunta1 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].pergunta1
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta1: prismic.KeyTextField;
+
+  /**
+   * resposta1.1 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta11
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta11: prismic.KeyTextField;
+
+  /**
+   * resposta2.1 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta21
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta21: prismic.KeyTextField;
+
+  /**
+   * resposta3.1 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta31
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta31: prismic.KeyTextField;
+
+  /**
+   * pergunta2 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].pergunta2
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta2: prismic.KeyTextField;
+
+  /**
+   * resposta1.2 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta12
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta12: prismic.KeyTextField;
+
+  /**
+   * resposta2.2 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta22
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta22: prismic.KeyTextField;
+
+  /**
+   * resposta3.2 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta32
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta32: prismic.KeyTextField;
+
+  /**
+   * pergunta3 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].pergunta3
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta3: prismic.KeyTextField;
+
+  /**
+   * resposta1.3 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta13
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta13: prismic.KeyTextField;
+
+  /**
+   * resposta2.3 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta23
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta23: prismic.KeyTextField;
+
+  /**
+   * resposta3.3 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta33
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta33: prismic.KeyTextField;
+
+  /**
+   * pergunta4 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].pergunta4
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta4: prismic.KeyTextField;
+
+  /**
+   * resposta1.4 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta14
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta14: prismic.KeyTextField;
+
+  /**
+   * resposta2.4 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta24
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta24: prismic.KeyTextField;
+
+  /**
+   * resposta3.4 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta34
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta34: prismic.KeyTextField;
+
+  /**
+   * pergunta5 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].pergunta5
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  pergunta5: prismic.KeyTextField;
+
+  /**
+   * resposta1.5 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta15
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta15: prismic.KeyTextField;
+
+  /**
+   * resposta2.5 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta25
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta25: prismic.KeyTextField;
+
+  /**
+   * resposta3.5 field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resposta35
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resposta35: prismic.KeyTextField;
+
+  /**
+   * resultado Maioria A field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resultadoMaioriaA
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resultadoMaioriaA: prismic.KeyTextField;
+
+  /**
+   * resultado Maioria B field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resultadoMaioriaB
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resultadoMaioriaB: prismic.KeyTextField;
+
+  /**
+   * resultado Maioria C field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].resultadoMaioriaC
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  resultadoMaioriaC: prismic.KeyTextField;
+
+  /**
+   * textoBotao field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textobotao
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textobotao: prismic.KeyTextField;
+
+  /**
+   * textoResultado field in *QuizSlice → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: quiz_slice.items[].textoresultado
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  textoresultado: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for QuizSlice Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type QuizSliceSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  Simplify<QuizSliceSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *QuizSlice*
+ */
+type QuizSliceSliceVariation = QuizSliceSliceDefault;
+
+/**
+ * QuizSlice Shared Slice
+ *
+ * - **API ID**: `quiz_slice`
+ * - **Description**: QuizSlice
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type QuizSliceSlice = prismic.SharedSlice<
+  "quiz_slice",
+  QuizSliceSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -2095,6 +3426,15 @@ declare module "@prismicio/client" {
       BlogPostDocumentData,
       BlogPostDocumentDataHeaderItem,
       BlogPostDocumentDataSlicesSlice,
+      DashboardDocument,
+      DashboardDocumentData,
+      DashboardDocumentDataSlicesSlice,
+      FaqpageDocument,
+      FaqpageDocumentData,
+      FaqpageDocumentDataHeaderItem,
+      FaqpageDocumentDataRodapemenuItem,
+      FaqpageDocumentDataRodapeconteudosItem,
+      FaqpageDocumentDataSlicesSlice,
       IndexDocument,
       IndexDocumentData,
       IndexDocumentDataSlicesSlice,
@@ -2105,6 +3445,15 @@ declare module "@prismicio/client" {
       LandingPageDocumentDataRodapemenuItem,
       LandingPageDocumentDataRodapeconteudosItem,
       LandingPageDocumentDataSlicesSlice,
+      QuizDocument,
+      QuizDocumentData,
+      QuizDocumentDataHeaderItem,
+      QuizDocumentDataRodapemenuItem,
+      QuizDocumentDataRodapeconteudosItem,
+      QuizDocumentDataSlicesSlice,
+      SurveyDocument,
+      SurveyDocumentData,
+      SurveyDocumentDataSlicesSlice,
       TesteDocument,
       TesteDocumentData,
       TesteDocumentDataSlicesSlice,
@@ -2129,6 +3478,7 @@ declare module "@prismicio/client" {
       CorpoSliceDepoimentosItem,
       CorpoSliceGatilhossociaisItem,
       CorpoSliceAgendaItem,
+      CorpoSliceBotaoQuizItem,
       CorpoSliceVariation,
       CorpoSliceDefault,
       CorpoSliceImagens,
@@ -2138,11 +3488,17 @@ declare module "@prismicio/client" {
       CorpoSliceGatilhossociais,
       CorpoSliceAgenda,
       CorpoSliceMapa,
+      CorpoSliceBotaoQuiz,
       EmAltaSlice,
       EmAltaSliceDefaultPrimary,
       EmAltaSliceDefaultItem,
       EmAltaSliceVariation,
       EmAltaSliceDefault,
+      FaqSlice,
+      FaqSliceDefaultItem,
+      FaqSliceVariation,
+      FaqSliceDefault,
+      FaqSliceTitulo,
       FormularioSlice,
       FormularioSliceDefaultPrimary,
       FormularioSliceVariation,
@@ -2161,6 +3517,10 @@ declare module "@prismicio/client" {
       NewstellerSliceDefaultPrimary,
       NewstellerSliceVariation,
       NewstellerSliceDefault,
+      QuizSliceSlice,
+      QuizSliceSliceDefaultItem,
+      QuizSliceSliceVariation,
+      QuizSliceSliceDefault,
     };
   }
 }

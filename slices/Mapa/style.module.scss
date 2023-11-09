@@ -1,7 +1,7 @@
 .containerMapa {
     display: grid;
     grid-template-rows: 20% 80%;
-    width: 100%;
+    width: 100vw;
     height: 30em;
     justify-content: center;
     margin-top: 10vh;
@@ -17,7 +17,9 @@
     }
 
     .mapa {
-        width: 60em;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3vh;
         height: 100%;
     }
 }

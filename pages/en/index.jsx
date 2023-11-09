@@ -17,21 +17,6 @@ import Popup from '../../components/Popup';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ page, metadata }) {
-	/*conexão com o servidor do chatbot*/
-	useEffect(() => {
-		async function carregaBot() {
-			await window.botpressWebChat?.init({
-				composerPlaceholder: "Chat with IndHelp",
-				botConversationDescription: "Tire suas duvidas",
-				botId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-				hostUrl: "https://cdn.botpress.cloud/webchat/v0",
-				messagingUrl: "https://messaging.botpress.cloud",
-				clientId: "a65625bb-64c9-4a57-b4db-a7bd2aa1270b",
-				botName: "IndHelp",
-			});
-		}
-		carregaBot();
-	});
 	console.log(page?.data);
 	return (
 		<>
@@ -44,6 +29,7 @@ export default function Home({ page, metadata }) {
 				<meta name="description" content={metadata?.meta_description} />
 				<meta property="og:image" content={metadata?.meta_image.url} />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="ROBOTS" content="INDEX, FOLLOW"></meta>
 				<link rel="icon" href="/favicon.ico" />
 
 				<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJMN7XBGQ3" />
